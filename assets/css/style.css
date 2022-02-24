@@ -1,0 +1,43 @@
+* {
+	color: #D6D6D6
+}
+
+body {
+	background-color: #230005;
+}
+
+.game-container {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.title-container {
+	text-align: center;
+	width: 510px;
+	border-bottom: solid 1px #D6D6D6;
+}
+
+.tile-container {
+	width: 330px;
+	margin-bottom: 38px;
+	flex-wrap: wrap;
+}
+
+.key-container {
+	width: 510px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.key-container button {
+	width: 43px;
+	height: 58px;
+	border-radius: 4px;
+	border: none;
+	background-color: #D6D6D6;
+	color: #230005;
+	margin: 4px;
+}
