@@ -31,3 +31,13 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 }
+
+.key-container button {
+	width: 43px;
+	height: 58px;
+	border-radius: 4px;
+	border: none;
+	background-color: #D6D6D6;
+	color: #230005;
+	margin: 4px;
+}
