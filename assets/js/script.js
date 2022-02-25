@@ -90,29 +90,23 @@ const deleteTile = () => {
 const checkTile = () => {
 	const guess = guessRows[thisRow].join('')
 
-	if (thisTile === 5) {
+	if (thisTile > 4) {
 		console.log('you guessed ' + guess + '...and the word was ' + word)
 		if (word == guess) {
 			displayMessage("Brilliant!")
-			isGameOver == true
+			isGameOver = true
 			return
 		}
 		else {
-			if (thisRow === 5) {
-				isGameOver == false
+			if (thisRow >= 5) {
+				isGameOver = false
 				displayMessage("Game Over!")
 				return
-		}
-		if (thisRow >= 5) {
-			isGameOver == false
-			displayMessage("Game Over!")
-			return
 		}
 		if (thisRow < 5) {
 			thisRow++
 			thisTile = 0
-			displayMessage("Try again...")
-			return
+			displayMessage("Try Again!")
 		}
 	}
 }
