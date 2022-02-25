@@ -1,0 +1,6 @@
+How to play Snimmet?
+1. To get started, enter any five-letter word related to San Valentine's theme to find out which letters match the hidden word. You will have 6 attempts to get  a perfect match. 
+
+2. If a letter is marked in silver, this means that this letter is not in the hidden word. If a letter is marked in pink, then that letter is in the hidden word, but does not match the correct location in the word. And if any letter is marked in red, then it is in this word and in the perfect spot. 
+
+3. Now if you know some letters with the correct place (red) and some letters that are in the word (pink), you can try to make a perfect match and win the game!
