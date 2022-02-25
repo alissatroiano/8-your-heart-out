@@ -5,6 +5,10 @@
 
 body {
 	background-color: #230005;
+	background:
+				linear-gradient(217deg, rgba(246, 161, 255, .8), rgba(255, 0, 0, 0) 70.71%),
+				linear-gradient(127deg, rgba(173, 255, 189, .8), rgba(0, 255, 0, 0) 70.71%),
+				linear-gradient(336deg, rgba(255, 203, 186, .8), rgba(0, 0, 255, 0) 70.71%);
 }
 
 .custom-button {
@@ -99,27 +103,30 @@ a {
 /* -------------------- Developer Page */
 .card-custom {
 	position: relative;
-    /* box-shadow: 4px 4px 2px rgba(0, 0, 0, .35),
-                inset 2px 2px 4px rgba(51, 51, 51, 0.493),
-                inset -2px -2px 4px rgba(51, 51, 51, 0.493),
-                -2px -2px 4px rgba(51, 51, 51, 0.699); */
-	border-color: #ffadbb;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, .35),
+				inset 2px 2px 4px rgba(51, 51, 51, 0.493),
+				inset -2px -2px 4px rgba(51, 51, 51, 0.493),
+				inset 2px -2px 4px rgba(51, 51, 51, 0.493),
+				-2px -2px 4px rgba(51, 51, 51, 0.699);
+	border-color: #961146;
+	border-width: 2px;
+	border-radius: 10px;
 }
+
 
 .card-filter {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-    box-shadow: 4px 4px 2px rgba(0, 0, 0, .35),
-                inset 2px 2px 4px rgba(51, 51, 51, 0.493),
-                inset -2px -2px 4px rgba(51, 51, 51, 0.493),
-                -2px -2px 4px rgba(51, 51, 51, 0.699);
-	border-color: #ffadbb;
+	box-shadow:inset 2px 2px 4px rgba(51, 51, 51, 0.75),
+				inset -2px 0px 4px rgba(51, 51, 51, 0.75);
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
 }
 
 .card-custom img{
-	/* max-height:5rem; */
-	/* border-bottom: 1px solid #010203; */
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
 }
 
 .name-text {
@@ -127,15 +134,9 @@ a {
 	text-shadow: -2px -2px 2px #faedc693,
 				1px 1px 0px #ffadbb,
 				2px 2px 1px rgba(0, 0, 0, .55);
-				/* 3px 3px rgba(0, 0, 0, 0.452); */
 }
 
 .info-text {
 	color: #010203;
-	text-shadow:
-	 /* -2px -2px 2px #faedc65b */
-				1px 1px 2px #747474
-				/* 2px 2px 1px rgba(0, 0, 0, .75), */
-				/* 3px 3px rgba(0, 0, 0, 0.452) */
-				;
+	text-shadow: 1px 1px 2px #747474;
 }
