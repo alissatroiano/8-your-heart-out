@@ -85,7 +85,7 @@ a {
 	display: flex;
 }
 
-.tile-container .guess-tile {
+.tile-container .tile {
 	width: 70px;
 	height: 62px;
 	border-radius: 5%;
