@@ -1,0 +1,141 @@
+/* -------------------- General */
+* {
+	color: #D6D6D6
+}
+
+body {
+	background-color: #230005;
+}
+
+.custom-button {
+    padding: .25em .5em;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, .5);
+    margin-bottom: .5rem;
+    width: fit-content;
+    transition-duration: .25s;
+    color: #fff;
+	border: 2px solid #ffadbb;
+    background: linear-gradient(45deg, #ca165e, #ffadbb, #ca165e);
+    text-shadow: 1px 1px #333;
+	position: relative;
+	z-index: 1;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* -------------------- Game / Index */
+
+.game-container {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.title-container {
+	text-align: center;
+	width: 510px;
+	border-bottom: solid 1px #D6D6D6;
+}
+
+.tile-container {
+	width: 330px;
+	margin-bottom: 38px;
+	flex-wrap: wrap;
+}
+
+.key-container {
+	width: 510px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.key-container button {
+	width: 43px;
+	height: 58px;
+	border-radius: 4px;
+	border: none;
+	background-color: #D6D6D6;
+	color: #230005;
+	margin: 4px;
+}
+
+.key-container button {
+	width: 43px;
+	height: 58px;
+	border-radius: 4px;
+	border: none;
+	background-color: #D6D6D6;
+	color: #230005;
+	margin: 4px;
+}
+
+.key-container button:nth-child(21),
+.key-container button:nth-child(28) {
+	width: 80px;
+	height: 58px;
+	border-radius: 10%;
+}
+
+.tile-container div {
+	display: flex;
+}
+
+.tile-container .guess-tile {
+	width: 70px;
+	height: 62px;
+	border-radius: 5%;
+	border: 2px solid #D6D6D6;
+	margin: 4px 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* -------------------- Developer Page */
+.card-custom {
+	position: relative;
+    /* box-shadow: 4px 4px 2px rgba(0, 0, 0, .35),
+                inset 2px 2px 4px rgba(51, 51, 51, 0.493),
+                inset -2px -2px 4px rgba(51, 51, 51, 0.493),
+                -2px -2px 4px rgba(51, 51, 51, 0.699); */
+	border-color: #ffadbb;
+}
+
+.card-filter {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, .35),
+                inset 2px 2px 4px rgba(51, 51, 51, 0.493),
+                inset -2px -2px 4px rgba(51, 51, 51, 0.493),
+                -2px -2px 4px rgba(51, 51, 51, 0.699);
+	border-color: #ffadbb;
+}
+
+.card-custom img{
+	/* max-height:5rem; */
+	/* border-bottom: 1px solid #010203; */
+}
+
+.name-text {
+	color: #444;
+	text-shadow: -2px -2px 2px #faedc693,
+				1px 1px 0px #ffadbb,
+				2px 2px 1px rgba(0, 0, 0, .55);
+				/* 3px 3px rgba(0, 0, 0, 0.452); */
+}
+
+.info-text {
+	color: #010203;
+	text-shadow:
+	 /* -2px -2px 2px #faedc65b */
+				1px 1px 2px #747474
+				/* 2px 2px 1px rgba(0, 0, 0, .75), */
+				/* 3px 3px rgba(0, 0, 0, 0.452) */
+				;
+}
