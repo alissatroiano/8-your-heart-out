@@ -41,3 +41,35 @@ body {
 	color: #230005;
 	margin: 4px;
 }
+
+.key-container button {
+	width: 43px;
+	height: 58px;
+	border-radius: 4px;
+	border: none;
+	background-color: #D6D6D6;
+	color: #230005;
+	margin: 4px;
+}
+
+.key-container button:nth-child(21),
+.key-container button:nth-child(28) {
+	width: 80px;
+	height: 58px;
+	border-radius: 10%;
+}
+
+.tile-container div {
+	display: flex;
+}
+
+.tile-container .guess-tile {
+	width: 70px;
+	height: 62px;
+	border-radius: 5%;
+	border: 2px solid #D6D6D6;
+	margin: 4px 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
