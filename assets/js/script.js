@@ -2,8 +2,9 @@
 
 const tileDisplay = document.querySelector('.tile-container')
 const keyboard = document.querySelector('.key-container')
+const messageText = document.querySelector('.message-container')
 
-const word = ['apple']
+const word = ['LOVER']
 
 const keys = [
 	'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P',
@@ -51,10 +52,9 @@ keys.forEach(key => {
 })
 
 const handleClick = (letter) => {
-	console.log('clicked', letter)
 	if (letter === 'Enter') {
-		// checkTile()
-		return thisRow++
+		checkTile()
+		return
 	}
 	if (letter === '<<') {
 		deleteTile()
@@ -83,4 +83,27 @@ const deleteTile = () => {
 	guessRows[0][thisTile] = ''
 	tile.setAttribute('data', '')
 	}
+}
+
+
+// 	A function to check if the user's guess is correct
+const checkTile = () => {
+	const guess = guessRows[thisRow].join('')
+
+	if (thisTile === 5) {
+		console.log('you guessed ' + guess + '...and the word was ' + word)
+		if (word == guess) {
+			displayMessage("Brilliant!")
+		}
+		else {
+			displayMessage("Sorry, the word was " + word)
+		}
+	}
+}
+
+// A function to display custom message if the user's guess is right
+const displayMessage = (message) => {
+	const messageElement = document.createElement('p')
+	messageElement.textContent = message
+	messageText.appendChild(messageElement)
 }

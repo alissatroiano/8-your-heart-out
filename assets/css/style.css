@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@200;400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* -------------------- General */
 * {
-	color: #D6D6D6
+	color: #230005;
 }
 
 body {
-	background-color: #230005;
+	background-color: #fafafa
 }
 
 .custom-button {
@@ -36,6 +38,15 @@ a {
 	align-items: center;
 }
 
+
+.message-container {
+	height: 30px;
+	width: 120px;
+	background-color: #ffadbb;
+	color: #230005;
+	font-family: 'Raleway', sans-serif;
+}
+
 .title-container {
 	text-align: center;
 	width: 510px;
@@ -59,17 +70,7 @@ a {
 	height: 58px;
 	border-radius: 4px;
 	border: none;
-	background-color: #D6D6D6;
-	color: #230005;
-	margin: 4px;
-}
-
-.key-container button {
-	width: 43px;
-	height: 58px;
-	border-radius: 4px;
-	border: none;
-	background-color: #D6D6D6;
+	background-color: #bebebe;
 	color: #230005;
 	margin: 4px;
 }
@@ -89,7 +90,7 @@ a {
 	width: 70px;
 	height: 62px;
 	border-radius: 5%;
-	border: 2px solid #D6D6D6;
+	border: 2px solid #230005;
 	margin: 4px 6px;
 	display: flex;
 	justify-content: center;
@@ -119,7 +120,7 @@ a {
 
 .card-custom img{
 	/* max-height:5rem; */
-	/* border-bottom: 1px solid #010203; */
+	/* border-bottom: 1px solid #230005; */
 }
 
 .name-text {
@@ -131,7 +132,7 @@ a {
 }
 
 .info-text {
-	color: #010203;
+	color: #230005;
 	text-shadow:
 	 /* -2px -2px 2px #faedc65b */
 				1px 1px 2px #747474
