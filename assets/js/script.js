@@ -94,11 +94,28 @@ const checkTile = () => {
 		console.log('you guessed ' + guess + '...and the word was ' + word)
 		if (word == guess) {
 			displayMessage("Brilliant!")
+			isGameOver == true
+			return
 		}
 		else {
-			displayMessage("Sorry, the word was " + word)
+			if (thisRow === 5) {
+				isGameOver == false
+				displayMessage("Game Over!")
+				return
+		}
+		if (thisRow >= 5) {
+			isGameOver == false
+			displayMessage("Game Over!")
+			return
+		}
+		if (thisRow < 5) {
+			thisRow++
+			thisTile = 0
+			displayMessage("Try again...")
+			return
 		}
 	}
+}
 }
 
 // A function to display custom message if the user's guess is right
