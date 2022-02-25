@@ -90,14 +90,13 @@ const deleteTile = () => {
 const checkTile = () => {
 	const guess = guessRows[thisRow].join('')
 
-	if (thisTile > 4) {
+	if (thisTile === 5) {
 		console.log('you guessed ' + guess + '...and the word was ' + word)
 		if (word == guess) {
 			displayMessage("Brilliant!")
 			isGameOver = true
 			return
-		}
-		else {
+		} else {
 			if (thisRow >= 5) {
 				isGameOver = false
 				displayMessage("Game Over!")
@@ -106,7 +105,6 @@ const checkTile = () => {
 		if (thisRow < 5) {
 			thisRow++
 			thisTile = 0
-			displayMessage("Try Again!")
 		}
 	}
 }
@@ -117,4 +115,8 @@ const displayMessage = (message) => {
 	const messageElement = document.createElement('p')
 	messageElement.textContent = message
 	messageText.appendChild(messageElement)
+}
+
+const addColor = () => {
+	document.querySelector('guessRow-' + thisRow + '-' + thisTile).style.backgroundColor = 'red'
 }
