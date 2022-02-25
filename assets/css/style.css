@@ -18,6 +18,8 @@ body {
 	border: 2px solid #ffadbb;
     background: linear-gradient(45deg, #ca165e, #ffadbb, #ca165e);
     text-shadow: 1px 1px #333;
+	position: relative;
+	z-index: 1;
 }
 
 a {
@@ -95,3 +97,45 @@ a {
 }
 
 /* -------------------- Developer Page */
+.card-custom {
+	position: relative;
+    /* box-shadow: 4px 4px 2px rgba(0, 0, 0, .35),
+                inset 2px 2px 4px rgba(51, 51, 51, 0.493),
+                inset -2px -2px 4px rgba(51, 51, 51, 0.493),
+                -2px -2px 4px rgba(51, 51, 51, 0.699); */
+	border-color: #ffadbb;
+}
+
+.card-filter {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, .35),
+                inset 2px 2px 4px rgba(51, 51, 51, 0.493),
+                inset -2px -2px 4px rgba(51, 51, 51, 0.493),
+                -2px -2px 4px rgba(51, 51, 51, 0.699);
+	border-color: #ffadbb;
+}
+
+.card-custom img{
+	/* max-height:5rem; */
+	/* border-bottom: 1px solid #010203; */
+}
+
+.name-text {
+	color: #444;
+	text-shadow: -2px -2px 2px #faedc693,
+				1px 1px 0px #ffadbb,
+				2px 2px 1px rgba(0, 0, 0, .55);
+				/* 3px 3px rgba(0, 0, 0, 0.452); */
+}
+
+.info-text {
+	color: #010203;
+	text-shadow:
+	 /* -2px -2px 2px #faedc65b */
+				1px 1px 2px #747474
+				/* 2px 2px 1px rgba(0, 0, 0, .75), */
+				/* 3px 3px rgba(0, 0, 0, 0.452) */
+				;
+}
