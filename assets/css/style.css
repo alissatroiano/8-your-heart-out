@@ -212,6 +212,9 @@ body {
 	color: #a7a7a7;
 }
 
+.card-height {
+	height: 25rem;
+}
 
 .card-filter {
 	position: absolute;
