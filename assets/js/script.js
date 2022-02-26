@@ -1,8 +1,39 @@
+const x = document.getElementById('welcome');
+const y = document.getElementById('game');
+
+function pageLoad() {
+	y.style.display = 'none';
+}
+document.getElementById("nameButton").addEventListener('click', function () {
+	y.style.display = 'block';
+	x.style.display = 'none';
+});
+
 // Game logic learned from https://www.youtube.com/watch?v=mpby4HiElek and customized by the development team 
 
 const tileDisplay = document.querySelector('.tile-container')
 const keyboard = document.querySelector('.key-container')
 const messageText = document.querySelector('.message-container')
+const nameButton = document.getElementById('nameButton')
+
+// const token = config.MY_API_TOKEN;
+// const key = config.SECRET_API_KEY;
+
+// document.getElementById("button").addEventListener('click', function () {
+// 	const fname = document.getElementById('firstName').value;
+// 	const sname = document.getElementById('secondName').value;
+ 
+
+// 	return fetch(`https://love-calculator.p.rapidapi.com/getPercentage?sname=${fname}&fname=${sname}`, {
+// 		"method": "GET",
+// 		"headers": {
+// 			"x-rapidapi-host": `${token}`,
+// 			"x-rapidapi-key": `${key}`
+// 		}
+// 		})
+// 		.then(response => response.json())
+// 		.then(result => console.log(result))  
+// });
 
 
 // const word = ['LOVER']
