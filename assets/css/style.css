@@ -322,30 +322,32 @@ body {
 
 	.container-fluid {
 		padding: 0 0.5em;
-		margin-top: 0.5em;
+	
 		margin-bottom: 0;
 	}
 	
-	.left {
+	/*.left {
 		transform: scale(.8);
 	}
 
 	.center {
 		transform: scale(0.77);
+	}*/
+	.left {
+		display: none;
 	}
 
 	.right {
-		transform: scale(.7);
+		transform: scale(.8);
+		margin-right: .8em;
 	}
 
 	#btn-game-left {
 		margin-left: 0;
-		padding-top: 0;
 		line-height: 5px;
 	}
 
 	#btn-game-right {
-		padding-top: 0;
 		line-height: 5px;
 	}
 }
