@@ -15,7 +15,11 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Merriweather', serif;
-	
+}
+
+body {
+	max-width: 2000px;
+	margin: 0 auto;
 }
 
 *,
@@ -27,12 +31,11 @@
 h1 {
 	font-weight: 900;
 	font-size: 3rem;
-	margin-bottom: 0!important;
-	
+	margin-bottom: 0!important;	
 }
 
 body {
-	background-color: var(--light-bc);
+	background-color: var(--light-bc)
 }
 
 /*----------------------Navbar*/
@@ -40,25 +43,26 @@ body {
 	padding: 0 1em;
 	margin-top: 2em;
 	margin-bottom: 2em;
-	max-width: 100%;
+	max-width: 100vw;
 	line-height: 3em;
 }
 
-.row {
+.main-info-header {
+	justify-items: center;
 	align-items: center;
 }
 
-.col-2 {
+.text-start {
 	margin-right: auto;
+	width: 18%;
+}
+
+.text-center {
+	width: 40%;
+}
+
+.text-end{
 	width: 20%;
-}
-
-.col-8 {
-	width: 50%;
-}
-
-.mt-3 {
-	max-width: 30%;
 	margin-left: auto;
 	margin-top: auto!important;
 	margin-bottom: auto!important;
@@ -89,6 +93,7 @@ body {
 	font-weight: bolder;
 	border: 3px solid var(--intense-red);
 	font-weight: 900;
+	text-decoration: none;
 }
 
 #btn-game-left:hover,
@@ -96,33 +101,6 @@ body {
 	background-color: var(--intense-red);
 	color: var(--light-bc);
 	transition: background-color 1s ease-in-out;
-}
-
-/*Check these buttons*/
-.button-developer {
-	border: 2px solid #ffadbb;
-}
-
-.button-link {
-	border: 2px solid #ca165e;
-}
-
-a {
-	text-decoration: none;
-}
-
-.footer-text {
-	line-height: 50px;
-}
-
-.header-text {
-	color: #faf9f6;
-	text-shadow:
-				-2px -2px 2px #6924125b,
-				1px 1px 0px #010203,
-				2px 2px 1px rgba(0, 0, 0, .75),
-				3px 3px rgba(0, 0, 0, 0.452)
-				;
 }
 
 /* -------------------Footer*/
@@ -146,10 +124,9 @@ a {
 .message-container {
 	height: 30px;
 	width: 120px;
-	background-color: #ffadbb;
+	background-color: var(--light-pink);
 	color: var(--dark);
 	font-family: 'Merriweather', serif;
-
 }
 
 .title-container {
@@ -162,8 +139,9 @@ a {
 	width: 330px;
 	margin-bottom: 38px;
 	flex-wrap: wrap;
-	padding: 1em;
-	border-radius: 10%;
+	padding: 1.5em;
+	border-radius: 3%;
+	background-color: rgb(255, 182, 193, 0.2);
 }
 
 .key-container {
@@ -236,7 +214,6 @@ a {
 }
 
 .card-custom img{
-
 	/* max-height:5rem; */
 	/* border-bottom: 1px solid #230005; */
 
@@ -253,7 +230,6 @@ a {
 }
 
 .info-text {
-
 	color: #230005;
 	text-shadow:
 	 /* -2px -2px 2px #faedc65b */
@@ -261,8 +237,6 @@ a {
 				/* 2px 2px 1px rgba(0, 0, 0, .75), */
 				/* 3px 3px rgba(0, 0, 0, 0.452) */
 				;
-
 	color: #010203;
 	text-shadow: 1px 1px 2px #747474;
-
 }
