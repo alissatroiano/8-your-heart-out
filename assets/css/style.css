@@ -236,8 +236,16 @@ body {
 	align-items: center;
 }
 
-.correct {
-	background-color: #ca165e6c;
+.pink-overlay {
+	background-color: #ffadbb8e !important;
+}
+
+.rose-overlay {
+	background-color: #ca165e6c !important;
+}
+
+.light-grey-overlay {
+	background-color: #d6d6d6 !important;
 }
 
 /* -------------------- Developer Page */

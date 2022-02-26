@@ -144,7 +144,8 @@ const deleteTile = () => {
 // 	A function to check if the user's guess is correct
 const checkTile = () => {
 	const guess = guessRows[thisRow].join('')
-	console.log(guessRows[thisRow], 'I am new')
+
+	// console.log(guessRows[thisRow], 'I am new')
 
 	// Breaks check before it processes as guess -- RE
 	if (guessRows[thisRow].join('').length != 5) {
@@ -159,6 +160,7 @@ const checkTile = () => {
 	// console.log(guess, "i am guess")
 
 	if (thisTile === 5) {
+		addColor()
 		console.log('you guessed ' + guess + '...and the word was ' + word)
 		if (word == guess) {
 			displayMessage("Brilliant!")
@@ -197,8 +199,7 @@ const displayMessage = (message) => {
 	messageText.appendChild(messageElement)
 }
 
-
-// A function to add colors behind letters in the guessRows if the letters are in the words
+// // A function to add colors behind letters in the guessRows if the letters are in the words
 // function addColor() {
 // 	for (let i = 0; i < word.length; i++) {
 // 		const tile = document.querySelector('.tile-' + thisRow + '-' + i)
@@ -210,11 +211,16 @@ const displayMessage = (message) => {
 
 // A function to add colors behind letters in the guessRows if the letters are in the words
 const addColor = () => {
-	const rowTiles = document.querySelectorAll('.tile-' + thisRow)
-	rowTiles.forEach(tile => {
+	const rowTiles = document.querySelectorAll('.guessRow-' + thisRow)
+	rowTiles.forEach((tile, index) => {
 		const tileLetter = tile.getAttribute('data')
-		if (tileLetter === word[i]) {
-			tile.classList.add('correct')
+
+		if (tileLetter === word[index]) {
+			tile.style.backgroundColor = '#00ff00'
+		} else if (word.includes(tileLetter)) {
+			tile.style.backgroundColor = '#ff0000'
+		} else {
+			tile.style.backgroundColor = '#666666'
 		}
 	})
 }
