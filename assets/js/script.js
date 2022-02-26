@@ -5,6 +5,7 @@ const keyboard = document.querySelector('.key-container')
 const messageText = document.querySelector('.message-container')
 
 const word = ['LOVER']
+let	isGameOver = false
 
 const keys = [
 	'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P',
@@ -76,6 +77,10 @@ const guessLetter = (letter) => {
 }
 
 const deleteTile = () => {
+	// Prevents backspace from functioning when game is over -- RE
+	if (isGameOver) {
+		return
+	}
 	if (thisTile > 0) {
 	thisTile--
 	const tile = document.querySelector('.tile-' + thisRow + '-' + thisTile)
