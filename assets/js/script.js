@@ -68,10 +68,10 @@ const guessLetter = (letter) => {
 	if (thisTile < 5 && thisRow < 6) {
 		const tile = document.querySelector('.tile-' + thisRow + '-' + thisTile)
 		tile.innerHTML = letter
-		guessRows[0][thisTile] = letter
+		guessRows[thisRow][thisTile] = letter // This line had a 0 instead of 'thisRow' -- RE
 		tile.setAttribute('data', letter)
 		thisTile++
-		console.log('guessRows', guessRows)
+		// console.log('guessRows', guessRows)
 	}
 }
 
@@ -89,6 +89,19 @@ const deleteTile = () => {
 // 	A function to check if the user's guess is correct
 const checkTile = () => {
 	const guess = guessRows[thisRow].join('')
+	console.log(guessRows[thisRow], 'I am new')
+
+	// Breaks check before it processes as guess -- RE
+	if (guessRows[thisRow].join('').length != 5){
+		console.log("row NOT full on enter click")
+		return
+	}
+
+	// Console log block for determining correctness of program function -- RE
+	console.log("row FULL on enter click")
+	// console.log(thisRow, "i am row")
+	// console.log(guessRows, "i am guess rows")
+	// console.log(guess, "i am guess")
 
 	if (thisTile === 5) {
 		console.log('you guessed ' + guess + '...and the word was ' + word)
@@ -96,13 +109,16 @@ const checkTile = () => {
 			displayMessage("Brilliant!")
 			isGameOver = true
 			return
+
 		} else {
 			if (thisRow >= 5) {
-				isGameOver = false
 				displayMessage("Game Over!")
+				isGameOver = false
 				return
 		}
+		// moves on to the next line and adds a word of encouragement
 		if (thisRow < 5) {
+			displayMessage("Try Again!")
 			thisRow++
 			thisTile = 0
 		}
@@ -110,10 +126,20 @@ const checkTile = () => {
 }
 }
 
+
 // A function to display custom message if the user's guess is right
 const displayMessage = (message) => {
 	const messageElement = document.createElement('p')
 	messageElement.textContent = message
+
+	console.log(typeof(messageText.lastChild))
+	console.log(messageText)
+
+	// remove repeat iterations of 'try again' -- RE
+	if (messageText.children[0]) {
+		messageText.children[0].remove()
+	}
+
 	messageText.appendChild(messageElement)
 }
 
