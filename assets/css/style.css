@@ -15,7 +15,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: 'Merriweather';
-	outline: 1px solid blueviolet;
+	
 }
 
 *,
@@ -40,6 +40,7 @@ body {
 	margin-top: 2em;
 	margin-bottom: 2em;
 	max-width: 100%;
+	line-height: 3em;
 }
 
 .row {
@@ -67,17 +68,39 @@ body {
 }
 
 .custom-button {
-    padding: .3em .5em;
-    /*border-radius: 5px;
-    box-shadow: 3px 3px 2px rgba(0, 0, 0, .5);
-	background-color: var(--light-pink);*/
+    padding: .4em 1em;	
+    border-radius: 20px;
+    /*box-shadow: 3px 3px 2px rgba(0, 0, 0, .5);*/
     width: fit-content;
     transition-duration: .25s;
     color: var(--dark);
 	position: relative;
-	z-index: 1;
-	font-weight: bold;
-	font-size: 1.2rem;
+	font-weight: bolder;
+}
+
+#btn-game-left {
+	border: 2px solid var(--intense-red);
+}
+
+#btn-game-right {
+	border: 2px solid var(--intense-red);
+	background-color: var(--intense-red);
+	color: var(--light-bc);
+	font-size: 1.12rem;
+}
+
+#btn-game-left:hover,
+#btn-game-left:focus {
+	box-shadow: inset -3em 0 0 0 var(--intense-red), inset 3em 0 0 0 var(--intense-red);
+	color: var(--light-bc);
+	transition-duration: 1.5s;
+}
+
+#btn-game-right:hover,
+#btn-game-right:focus {
+	box-shadow: inset -3.8em 0 0 0 var(--light-bc), inset 3.5em 0 0 0 var(--light-bc);
+	color: var(--dark);
+	transition-duration: 1.5s;
 }
 
 /*Check these buttons*/
