@@ -289,4 +289,20 @@ body {
 				;
 	color: #010203;
 	text-shadow: 1px 1px 2px #747474;
+
+
+}
+/*For mobile screens*/
+@media (max-width: 991px) {
+	.tile-container {
+		transform: scale(.9);
+		margin-bottom: 1px;
+	}
+    .key-container {
+		transform: scale(.73);
+		/* padding-left: 5px; */
+	}
+	footer {
+		display: none;
+	}
 }
