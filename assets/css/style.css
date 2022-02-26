@@ -312,4 +312,11 @@ body {
 		transform: scale(.70);
 		width: fit-content;
 	}
+
+	.btn-help {
+		top: 0.5em;
+		right: 0.5em;
+		transform: scale(0.8) translateX(10px) translateY(10px); 
+		
+	}
 }
