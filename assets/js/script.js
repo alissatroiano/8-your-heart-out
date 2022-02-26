@@ -5,6 +5,10 @@ const keyboard = document.querySelector('.key-container')
 const messageText = document.querySelector('.message-container')
 
 
+// const word = ['LOVER']
+let	isGameOver = false
+
+
 async function getRandomWord() {
     let url = 'words.json';
     try {
@@ -96,6 +100,10 @@ const guessLetter = (letter) => {
 }
 
 const deleteTile = () => {
+	// Prevents backspace from functioning when game is over -- RE
+	if (isGameOver) {
+		return
+	}
 	if (thisTile > 0) {
 	thisTile--
 	const tile = document.querySelector('.tile-' + thisRow + '-' + thisTile)
