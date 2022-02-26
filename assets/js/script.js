@@ -4,7 +4,31 @@ const tileDisplay = document.querySelector('.tile-container')
 const keyboard = document.querySelector('.key-container')
 const messageText = document.querySelector('.message-container')
 
-const word = ['LOVER']
+
+// const word = ['LOVER']
+let	isGameOver = false
+
+
+async function getRandomWord() {
+    let url = 'words.json';
+    try {
+        let res = await fetch(url);
+        return await res.json();
+    } catch (error) {
+        return `Error: ${error}`;
+    }
+}
+async function getShuffledWord() {
+    let data = await getRandomWord();
+	const counter = data.length;
+	const index = Math.floor(Math.random() * counter);
+	word = data[index].toUpperCase();
+	console.log(word)
+	return word
+}
+
+let word = getShuffledWord();
+
 
 const keys = [
 	'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P',
@@ -76,6 +100,10 @@ const guessLetter = (letter) => {
 }
 
 const deleteTile = () => {
+	// Prevents backspace from functioning when game is over -- RE
+	if (isGameOver) {
+		return
+	}
 	if (thisTile > 0) {
 	thisTile--
 	const tile = document.querySelector('.tile-' + thisRow + '-' + thisTile)
