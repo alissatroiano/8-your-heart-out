@@ -91,16 +91,20 @@ body {
     color: var(--dark);
 	position: relative;
 	font-weight: bolder;
-	border: 3px solid var(--intense-red);
 	font-weight: 900;
 	text-decoration: none;
 }
 
-#btn-game-left:hover,
-#btn-game-right:hover {
-	background-color: var(--intense-red);
-	color: var(--light-bc);
-	transition: background-color 1s ease-in-out;
+.fa-keyboard,
+.fa-gamepad {
+	font-size: 1.5rem;
+	color: var(--intense-red)
+}
+
+.fa-keyboard:hover,
+.fa-gamepad:hover {
+	transform: scale(1.3);
+	
 }
 
 /* -------------------Footer*/
