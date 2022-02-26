@@ -231,6 +231,10 @@ body {
 	align-items: center;
 }
 
+.correct {
+	background-color: #ca165e6c;
+}
+
 /* -------------------- Developer Page */
 .developer-container {
 	min-height: calc(100vh - 100px)
