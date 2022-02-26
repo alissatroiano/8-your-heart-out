@@ -17,9 +17,26 @@
         <div class="row">
             <div class="col-12">
                 <div class="row">
-                    <div class="col-2 text-start">
+                    <div class="col-1 text-start">
                         Logo
                     </div>
+
+                    <!-- optional collapse button for rules of game!! -->
+                    <div class="col-1 text-start">
+                        <p>
+                            <button class="btn btn-primary custom-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                Rules
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                The game is played by guessing the word. You have 6 guesses.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end optional collapse button for rules of game!! -->
+
                     <div class="col-8 text-center">
                         <h1>Smitten</h1>
                     </div>
@@ -35,7 +52,7 @@
     <!-- Game logic learned from https://www.youtube.com/watch?v=mpby4HiElek and customized by the development team-->
     <main class="container">
         <div class="game-container">
-            <div class="message-container">  
+            <div class="message-container">
             </div>
             <div class="tile-container"></div>
             <div class="key-container"></div>
