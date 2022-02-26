@@ -211,7 +211,7 @@ const displayMessage = (message) => {
 
 // A function to add colors behind letters in the guessRows if the letters are in the words
 const addColor = () => {
-	const rowTiles = document.querySelectorAll('.guessRow-' + thisRow)
+	const rowTiles = document.querySelector('.guessRow-' + thisRow).childNodes
 	rowTiles.forEach((tile, index) => {
 		const tileLetter = tile.getAttribute('data')
 
