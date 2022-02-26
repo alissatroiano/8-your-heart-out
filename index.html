@@ -11,6 +11,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/5cf6f031a9.js" crossorigin="anonymous"></script>
     <title>8-Your-Heart-Out</title>
 </head>
 
@@ -23,6 +24,7 @@
                     <div class="col-1 text-start">
                         Logo
                     </div>
+
                     <!-- optional collapse button for rules of game!! -->
                     <div class="col-1 text-start">
                         <p>
@@ -57,11 +59,14 @@
                     </div>
                     <!-- end optional collapse button for rules of game!! -->
 
+
                     <div class="col-8 text-center">
                         <h1><span id="diff-letter">S</span>mitten</h1>
                     </div>
                     <!-- nav bar (if needed) -->
                     <nav class="col-2 text-end mt-3">
+                   <!--     <a href="index.html" class="custom-button"><i class="fa-solid fa-gamepad"></i></a>
+                        <a href="developer-page.html" class="custom-button"><i class="fa-regular fa-keyboard"></i></a> --->
                         <a id="btn-game-left" href="index.html" class="custom-button">Game</a>
                         <a id="btn-game-right" href="developer-page.html" class="custom-button">Developers</a>
                     </nav>
@@ -70,7 +75,22 @@
     </header>
     <!-- end header -->
     <!-- Game logic learned from https://www.youtube.com/watch?v=mpby4HiElek and customized by the development team-->
-    <main class="container">
+    <main class="container mn-container">
+        <!-- optional collapse button for rules of game!! -->
+        <div class="question">
+            <p>
+                <button class="btn btn-primary custom-button btn-help" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="fa-solid fa-question"></i> 
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    The game is played by guessing the word. You have 6 guesses.
+                </div>
+            </div>
+        </div>
+        <!-- end optional collapse button for rules of game!! -->
         <div class="game-container">
             <div class="message-container center-output">
             </div>
