@@ -21,23 +21,6 @@
                     <div class="col-1 text-start">
                         Logo
                     </div>
-
-                    <!-- optional collapse button for rules of game!! -->
-                    <div class="col-1 text-start">
-                        <p>
-                            <button class="btn btn-primary custom-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                <i class="fa-solid fa-question"></i> <!--In here was only the word rules-->
-                            </button>
-                        </p>
-                        <div class="collapse" id="collapseExample">
-                            <div class="card card-body">
-                                The game is played by guessing the word. You have 6 guesses.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end optional collapse button for rules of game!! -->
-
                     <div class="col-8 text-center">
                         <h1><span id="diff-letter">S</span>mitten</h1>
                     </div>
@@ -51,7 +34,22 @@
     </header>
     <!-- end header -->
     <!-- Game logic learned from https://www.youtube.com/watch?v=mpby4HiElek and customized by the development team-->
-    <main class="container">
+    <main class="container mn-container">
+        <!-- optional collapse button for rules of game!! -->
+        <div class="question">
+            <p>
+                <button class="btn btn-primary custom-button btn-help" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="fa-solid fa-question"></i> 
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    The game is played by guessing the word. You have 6 guesses.
+                </div>
+            </div>
+        </div>
+        <!-- end optional collapse button for rules of game!! -->
         <div class="game-container">
             <div class="message-container">
             </div>
