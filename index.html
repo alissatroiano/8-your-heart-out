@@ -11,6 +11,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/5cf6f031a9.js" crossorigin="anonymous"></script>
     <title>8-Your-Heart-Out</title>
 </head>
 
@@ -27,25 +28,46 @@
                     <!-- optional collapse button for rules of game!! -->
                     <div class="col-1 text-start">
                         <p>
-                            <button class="btn btn-primary custom-button position-relative" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <button class="btn btn-primary custom-button position-relative" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                                aria-controls="collapseExample">
                                 Rules
                             </button>
                         </p>
                         <div class="collapse position-absolute" id="collapseExample">
                             <div class="card card-body">
-                                The game is played by guessing the word. You have 6 guesses.
+                                <p>
+                                    How to play Smitten?<br>
+                                    1. To get started, enter any five-letter word related to San Valentine's theme to
+                                    find
+                                    out which letters match the hidden word. You will have 6 attempts to get a perfect
+                                    match.
+                                    <br>
+                                    2. If a letter is marked in silver, this means that this letter is not in the hidden
+                                    word. If a letter is marked in pink, then that letter is in the hidden word, but
+                                    does
+                                    not match the correct location in the word. And if any letter is marked in red, then
+                                    it
+                                    is in this word and in the perfect spot.
+                                    <br>
+                                    3. Now if you know some letters with the correct place (red) and some letters that
+                                    are
+                                    in the word (pink), you can try to make a perfect match and win the game!
+                                </p>
                             </div>
                         </div>
                     </div>
                     <!-- end optional collapse button for rules of game!! -->
+
 
                     <div class="col-8 text-center">
                         <h1><span id="diff-letter">S</span>mitten</h1>
                     </div>
                     <!-- nav bar (if needed) -->
                     <nav class="col-2 text-end mt-3">
-                        <a  id="btn-game-left" href="index.html" class="custom-button">Game</a>
+                   <!--     <a href="index.html" class="custom-button"><i class="fa-solid fa-gamepad"></i></a>
+                        <a href="developer-page.html" class="custom-button"><i class="fa-regular fa-keyboard"></i></a> --->
+                        <a id="btn-game-left" href="index.html" class="custom-button">Game</a>
                         <a id="btn-game-right" href="developer-page.html" class="custom-button">Developers</a>
                     </nav>
                 </div>
@@ -53,7 +75,22 @@
     </header>
     <!-- end header -->
     <!-- Game logic learned from https://www.youtube.com/watch?v=mpby4HiElek and customized by the development team-->
-    <main class="container">
+    <main class="container mn-container">
+        <!-- optional collapse button for rules of game!! -->
+        <div class="question">
+            <p>
+                <button class="btn btn-primary custom-button btn-help" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="fa-solid fa-question"></i> 
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    The game is played by guessing the word. You have 6 guesses.
+                </div>
+            </div>
+        </div>
+        <!-- end optional collapse button for rules of game!! -->
         <div class="game-container">
             <div class="message-container center-output">
             </div>
@@ -67,6 +104,8 @@
             <div class="col-12 fixed-bottom info-footer">@2022 8-Your-Heart-Out all rights reserved</div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
