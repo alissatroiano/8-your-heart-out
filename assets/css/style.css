@@ -357,9 +357,7 @@ body {
 }
 
 .modal-body {
-	text-align: left;
-	font-size: 1rem;
-	font-family: 'Futura-PT', sans-serif;
+	font-size: 1.1rem;
 }
 
 h5#staticBackdropLabel {
@@ -370,36 +368,45 @@ h5#staticBackdropLabel {
 }
 
 span#bold {
-	font-family: 'Futura-PT', sans-serif;
 	font-weight: 700;
 	color: rgb(202, 22, 94);
+	font-family: 'Futura-PT', sans-serif;
 }
 
 span#justbold {
-	font-family: 'Futura-PT', sans-serif;
 	font-weight: 700;
 }
 
 p#modal-body {
+	text-align: left;
+}
+
+p#modal-body {
 	font-family: 'Futura-PT', sans-serif;
+	text-align: center;
+	font-size: 1.2rem;
+
+}
+
+p#modal-examples {
+	font-size: 1.2rem;
 }
 
 .not-word {
+	font-family: 'Merriweather', serif;
 	background-color: rgb(214, 214, 214);
-	font-family: 'Futura-PT', sans-serif;
 	color: #000;
 	letter-spacing: 2px;
-	margin: 0px 2px;
 }
 
 .in-word {
-	font-family: 'Futura-PT', sans-serif;
+	font-family: 'Merriweather', serif;
 	letter-spacing: 2px;
 	background-color: rgb(255, 192, 203);
 }
 
 .in-place {
-	font-family: 'Futura-PT', sans-serif;
+	font-family: 'Merriweather', serif;
 	color: #000;
 	letter-spacing: 2px;
 	background-color: rgb(202, 22, 94);
