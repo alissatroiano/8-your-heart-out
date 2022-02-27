@@ -183,6 +183,38 @@ body {
 
 /* -------------------- Game / Index */
 
+.help-modal-contianer {
+	position: absolute;
+	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+	/* background-color: rgba(0, 0, 0, 1); */
+	z-index: 4;
+}
+
+.help-modal-background-filter {
+	background-color: rgba(0, 0, 0, .75);
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	z-index: 5;
+	overflow: hidden;
+
+}
+
+.help-modal-content {
+	background-color: #bea3a7;
+	position: absolute;
+	min-height: 50vh;
+	top:50%;
+	transform: translateY(-50%);
+	z-index: 6;
+}
+
+.help-modal-content {
+
+}
+
 .game-container {
 	display: flex;
 	flex-direction: column;
@@ -338,10 +370,6 @@ body {
 	border-radius: 10px;
 }
 
-.card-height {
-	height: 25rem;
-}
-
 .card-filter {
 	position: absolute;
 	height: 100%;
@@ -352,6 +380,11 @@ body {
 	border-top-left-radius: 8px;
 }
 
+.card-links a {
+	position: relative;
+	bottom: 0;
+}
+
 .card-custom img{
 	/* max-height:5rem; */
 	/* border-bottom: 1px solid #230005; */
@@ -359,6 +392,16 @@ body {
 	border-top-right-radius: 8px;
 	border-top-left-radius: 8px;
 
+}
+
+.developer-content-spacing {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between
+}
+
+.developer-content-spacing p {
+	line-height: 1.5;
 }
 
 .name-text {
