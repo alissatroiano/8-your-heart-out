@@ -103,6 +103,57 @@ body {
 	transform: scale(1.3);
 }
 
+/* ---------------Landing page */
+
+#welcome {
+	width: 80vw;
+	height: auto !important;
+	padding: 2em;
+	background-color: var(--light-pink);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5em;
+	margin-bottom: 3em;
+}
+
+#welcome > h1 {
+	font-size: 2rem;
+	text-align: center;
+	padding-bottom: 1.5em;
+}
+
+#welcome > p {
+	padding: 0 2em;
+	line-height: 2em;
+	width: 70vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#love-comp {
+	color: var(--intense-red);
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+.form-group {
+	width: 70vw;
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+
+.form-group input {
+	border: 2px solid var(--intense-red);
+	background-color: var(--light-bc);
+	padding: 2px;
+	font-size: 1rem;
+	text-align: center !important;
+}
+
+#welcome > *{
+	border: 2px solid red;
+}
+
 /* -------------------Footer*/
 .info-footer {
 	background-color: var(--dark);
