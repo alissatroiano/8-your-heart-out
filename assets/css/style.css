@@ -116,13 +116,13 @@ body {
 }
 
 .center-form {
-	width: 50vw;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: rgb(190, 163, 167, 0.6);
 	border-radius: 10px;
 	padding-top: 2em;
 	padding-bottom: 2em;
+	max-width: 800px;
 }
 
 .center-form > h1 {
@@ -159,6 +159,7 @@ body {
 	font-size: 1.2rem;
 	margin-left: auto;
 	margin-right: auto;
+	width: 60% !important;
 }
 
 .user-input:focus { 
@@ -417,6 +418,23 @@ strong {
 		right: 0.5em;
 		transform: scale(0.8) translateX(10px) translateY(10px); 
 	}
+
+	#welcome {
+		width: 100vw;
+	}
+	
+	.center-form {
+		width: 80vw;
+	}
+
+	.center-form  > p {
+		text-align: justify;
+
+	}
+
+	.user-input {
+		width: 70% !important;
+	}
 }
 
 @media (max-width: 500px) {
@@ -445,4 +463,15 @@ strong {
 	#btn-game-right {
 		line-height: 5px;
 	}
+
+	
+	.user-input {
+		width: 70% !important;
+	}
+
+	.center-form  > p {
+		text-align: justify;
+
+	}
+
 }
