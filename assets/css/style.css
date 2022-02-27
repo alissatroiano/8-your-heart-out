@@ -240,7 +240,10 @@ body {
 
 /* -------------------- Developer Page */
 .developer-container {
-	min-height: calc(100vh - 100px)
+	min-height: calc(100vh - 100px);
+	margin-top: 7em;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
 }
 
 .card-custom {
@@ -250,10 +253,8 @@ body {
 				inset -2px -2px 4px rgba(51, 51, 51, 0.493),
 				inset 2px -2px 4px rgba(51, 51, 51, 0.493),
 				-2px -2px 4px rgba(51, 51, 51, 0.699);
-	border-color: #961146;
-	border-width: 2px;
+				border: 2px solid var(--intense-red);
 	border-radius: 10px;
-	color: #a7a7a7;
 }
 
 .card-height {
@@ -280,22 +281,25 @@ body {
 }
 
 .name-text {
-	color: #444;
-	text-shadow: -2px -2px 2px #faedc693,
-				1px 1px 0px #ffadbb,
-				2px 2px 1px rgba(0, 0, 0, .55);
+	color: var(--dark);
+	font-family: 'Merriweather';
+	text-align: center;
+	text-shadow:
+				1px 1px 0px var(--light-pink),
+				2px 2px 1px var(--silver-pink);
 }
 
 .info-text {
-	color: #230005;
+	color: var(--dark);
 	text-shadow:
 	 /* -2px -2px 2px #faedc65b */
 				1px 1px 2px #747474
 				/* 2px 2px 1px rgba(0, 0, 0, .75), */
 				/* 3px 3px rgba(0, 0, 0, 0.452) */
 				;
-	color: #010203;
-	text-shadow: 1px 1px 2px #747474;
+	text-align: center;
+	line-height: 20px;
+	margin-top: 2em;
 }
 
 strong {
