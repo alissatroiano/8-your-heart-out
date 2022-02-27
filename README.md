@@ -20,19 +20,40 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
     - [Libraries and Programs Used](#libraries-and-programs-used)
   - [CREDITS](#credits)
   - [ACKNOWLEDGEMENTS](#acknowledgements)
+  - [Deployment](#deployment)
 
 ## UX
 
 ### Features
 
-- Home: The home page of the game. [Home](https://alissatroiano.github.io/8-your-heart-out/)
-  
-- Smitten: The game itself. [Game](https://alissatroiano.github.io/8-your-heart-out/)
-
+Navigation bar
+- The navigation bar is present on all three pages to maintain uniformity.
+- The navigation bar is fully responsive. 
+- It includes the logo, the love calculater page, the game page and the developer page. 
 - Directions: A Bootstrap modal with text content about how to play, so users understand how to play the game.
+  This is only present on the game page.
+- It's easy to navigate on every page, there is no need to use the 'back' button. 
 
-- Developers: The page that shows the developers of the game and their contact information. [Developer Page](https://alissatroiano.github.io/8-your-heart-out/developer-page.html)
-### User Stories
+Home: The home page of the game. [Home](https://alissatroiano.github.io/8-your-heart-out/)
+- The landing page has a big welcome message that directly draws attention. 
+- Right underneath is the love calculator visible. 
+- It has two containers where the names of two people are entered. And a submit button. 
+- After Solving the word puzzle it reveals how romantically compatible they are using the Love Calculator API! 
+
+Footer
+- The footer section includes an all rights reserved and the name of the developers group, 8-your-heart-out. 
+- The footer will be shown throughout all pages to maintain uniformity. 
+
+Smitten: The game itself. [Game](https://alissatroiano.github.io/8-your-heart-out/)
+- The game page contains the actual game. 
+- It's represented by a container with six rows of five fields each for the amount
+  of letters for the word that needs to be guessed. 
+- The 6 rows make it clear a person has only 6 guesses to find the correct word.
+- Right underneath it, is the keyboard which is used to fill in the letters, it's easy to use because it represents a regular keyboard.
+
+Developers: The page that shows the developers of the game and their contact information. [Developer Page](https://alissatroiano.github.io/8-your-heart-out/developer-page.html)
+- The developer page contains 6 cards with each a photo and information about the collaborators on this project.
+- At the bottom of each card are links presented to both Github and Linkedin for easy connection. 
 
 ### Wireframes
 ![page 1 smitten](https://user-images.githubusercontent.com/95313496/155887954-bdab7e8e-5f10-4590-b0d0-8ac2d226dbf8.jpg)
@@ -54,7 +75,15 @@ All wireframes were created with Balsamiq wireframing software and can be viewed
 - [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
 ### Libraries and Programs Used
+
+### Deployment
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+In the GitHub repository, navigate to the Settings tab
+From the source section drop-down menu, select the Master Branch
+Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+The live link can be found here: [title](https://www.example.com)
 
 ## CREDITS
 
@@ -63,6 +92,8 @@ All wireframes were created with Balsamiq wireframing software and can be viewed
 - The fonts in the site were copied from [Google Fonts](https://fonts.google.com/)
   
 - [Rapid API](https://rapidapi.com/) was used to find the **matchmaking API** for the game.
+
+- Deployment description comes from [Code Institute](https://github.com/Code-Institute-Solutions/readme-template)
 
 ## ACKNOWLEDGEMENTS
 

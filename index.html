@@ -42,17 +42,21 @@
     <!-- end header -->
     <!--welcome and name input container-->
     <div id="welcome" class="container vh-100 flex-column justify-content-center">
-        <h1>Welcome to Smitten</h1>
-        <p>Enter the names of two people. Solve the word puzzle to reveal how romantically compatible they are using the <a href="https://rapidapi.com/ajith/api/love-calculator/details" target="_blank">Love Calculator API!</a></p>
-        <div class="form-group">
-            <label for="usr">First Person:</label>
-            <input type="text" class="w-50 form-control" id="firstName">
-          </div>
-          <div class="form-group">
-            <label for="pwd">Second Person:</label>
-            <input type="text" class="w-50 form-control" id="secondName">
+        <div class="center-form">
+            <h1>Welcome to Smitten</h1>
+            <p>Enter the names of two people. Solve the word puzzle to reveal how romantically compatible they are using the <a id= "love-comp" href="https://rapidapi.com/ajith/api/love-calculator/details" target="_blank">Love Calculator API!</a></p>
+            <div class="form-group">
+                <label for="usr">First Person</label><br>
+                <input type="text" class="w-50 form-control user-input" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Second Person</label><br>
+                <input type="text" class="w-50 form-control user-input" id="pwd">
+            </div>
+            <div class="btn-cont">
+                <button id="nameButton" type="submit">Submit</button>
+            </div>
         </div>
-        <button id="nameButton">Submit</button>
     </div>
     
     <!-- Game logic learned from https://www.youtube.com/watch?v=mpby4HiElek and customized by the development team-->
