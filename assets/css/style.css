@@ -250,8 +250,8 @@ body {
 }
 
 .message-container {
-	height: 30px;
-	width: 120px;
+	height: 50px;
+	min-width: 120px;
 }
 
 .message-container p {
