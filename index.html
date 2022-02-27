@@ -10,6 +10,8 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Load FontAwesome CDN-->
     <script src="https://kit.fontawesome.com/5cf6f031a9.js" crossorigin="anonymous"></script>
+    <!--Import Futura from Adobe Fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/hdw8ydb.css">
     <!--Load Custom CSS Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--Insert Favicon-->
@@ -71,29 +73,30 @@
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Smitten</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header text-center">
+              <h5 class="modal-title" id="staticBackdropLabel"><span id="diff-letter">S</span>mitten</h5>
             </div>
             <div class="modal-body">
-                1. To get started, enter any five-letter word related to San Valentine's theme to
-                find
-                out which letters match the hidden word. You will have 6 attempts to get a perfect
-                match.
-                <br>
-                2. If a letter is marked in silver, this means that this letter is not in the hidden
-                word. If a letter is marked in pink, then that letter is in the hidden word, but
-                does
-                not match the correct location in the word. And if any letter is marked in red, then
-                it
-                is in this word and in the perfect spot.
-                <br>
-                3. Now if you know some letters with the correct place (red) and some letters that
-                are
-                in the word (pink), you can try to make a perfect match and win the game!
+              <p id="modal-body">
+                Guess the word in <span id="bold">SIX TRIES</span> or less to win <span id="bold">SMITTEN!</span> 
+              </p>
+              <p id="modal-body">
+                <span id="bold">NOTE:</span> All of the words in our word bank are five-letter words related to Valentine's Day and love.
+              </p>
+              <p id="modal-body">
+               If a letter in your word looks like <span class="not-word">THIS</span> it's <span id="bold">not in the word at all.</span>
+               </p>
+
+               <p id="modal-body">
+                If a letter in your word looks like <span class="in-word">THIS</span> it's <span id="bold">in a different part of the word</span>
+                </p>
+
+                <p id="modal-body">
+                  If a letter in your word looks like <span class="in-place">THIS</span> it's <span id="bold">in the spot you guessed!</span>
+                  </p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">I'm Ready To Play!</button>
             </div>
           </div>
         </div>
