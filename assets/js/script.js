@@ -167,7 +167,7 @@ const checkTile = () => {
 		addColor()
 		console.log('you guessed ' + guess + '...and the word was ' + word)
 		if (word == guess) {
-			displayMessage(`${apiResponseData[0].fname} you're ${apiResponseData[0].percentage}% compatible with ${apiResponseData[0].sname}`)
+			displayMessage('Brilliant!')
 			console.log(apiResponseData[0].percentage);
 			isGameOver = true
 			return
