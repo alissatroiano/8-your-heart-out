@@ -232,3 +232,19 @@ const addColor = () => {
 		}
 	})
 }
+
+
+// remove modal
+// let infoModal = document.getElementById("staticBackdrop");
+// infoModal.addEventListener('click', function () {
+// 	infoModal.removeAttribute("role")
+// 	infoModal.setAttribute("aria-hidden", "true")
+// 	infoModal.removeAttribute("aria-modal")
+	
+// 	console.log(document.querySelectorAll(".modal-backdrop").length)
+// 	let findModalBackdrops = document.querySelectorAll(".modal-backdrop").length
+// 	for (i=0; i<findModalBackdrops; i++){
+// 			document.getElementsByClassName("modal-backdrop")[0].remove()
+// 		}
+// 	infoModal.style.display = "none"
+// } )
