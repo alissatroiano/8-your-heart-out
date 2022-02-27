@@ -4,6 +4,8 @@
 
 The rules are simple: The player must guess the hidden word of 5 characters in 6 tries. First of all, type any love word on the first line and see if there's a match. You will get a match and the tile will turn red if the letter is guessed correctly and is in the right spot. If the letter is in the word, but in the wrong position, will become pink.  And the tile will become silver if the letter doesn't match the place and isn't in the word.
 
+Check out this project here: [Smitten](https://alissatroiano.github.io/8-your-heart-out/)
+
 ## Table of Contents
 
 - [Smitten](#smitten)
