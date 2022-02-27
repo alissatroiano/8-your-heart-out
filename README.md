@@ -42,6 +42,10 @@ All wireframes were created with Balsamiq wireframing software and can be viewed
 
 - [Google Fonts](https://fonts.google.com/)
 - [Bootstrap 5](https://getbootstrap.com/docs/5.1/)
+- [Git]
+- [gitpod]
+- [gitpages]
+- 
 ### Languages Used
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
