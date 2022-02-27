@@ -118,7 +118,6 @@ const handleClick = (letter) => {
 		return
 	}
 	guessLetter(letter)
-	addColorKeyboard()
 }
 
 // A function to display letter in tile when user clicks on it
@@ -146,7 +145,6 @@ const deleteTile = () => {
 	tile.setAttribute('data', '')
 	}
 }
-
 
 const checkTile = () => {
 	const guess = guessRows[thisRow].join('')
@@ -207,9 +205,9 @@ const displayMessage = (message) => {
 }
 
 // A function to add colors behind keyboard buttons if the user clicks on letters that are in the word
-const addColorKeyboard = (letter, color) => {
-	const keyButton = document.querySelector('#' + letter)
-	keyButton.style.backgroundColor = color
+const addColorKeyboard = (buttonElement, color) => {
+	const letterKey = document.getElementById(buttonElement)
+	letterKey.classList.add(color)
 }
 
 // A function to add colors behind letters in the guessRows if the letters are in the words
