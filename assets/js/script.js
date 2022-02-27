@@ -178,7 +178,7 @@ const checkTile = () => {
 				displayMessage("Try Again!")
 				thisRow++
 				thisTile = 0
-			}
+			} 
 		}
 	}
 }
