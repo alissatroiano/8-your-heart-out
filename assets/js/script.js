@@ -152,7 +152,6 @@ const checkTile = () => {
 			displayMessage("Brilliant!")
 
 			displayMessage('Brilliant!')
-			console.log(apiResponseData[0].percentage);
 
 			isGameOver = true
 			return
