@@ -122,7 +122,7 @@ body {
 /* -------------------- Game / Index */
 
 .game-container {
-	height: 90vh;
+	/* height: 90vh; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -141,10 +141,16 @@ body {
 	border: 2px solid var(--intense-red);
 	border-radius: 30px;
 	padding: .3em .8em;
-	position: absolute;
 	right: 2em;
 	top: 1em;
 	transition: transform 1s;
+	margin-left: auto;
+	position: relative;
+}
+
+.btn-help:active, .btn-help:focus {
+	background-color: #961146;
+	color: #D6D6D6;
 }
 
 .fa-question {
@@ -165,16 +171,16 @@ body {
 
 .message-container {
 	height: 30px;
-	width: 120px;
-	background-color: var(--light-pink);
-	color: var(--dark);
-	font-family: 'Merriweather', serif;
 }
 
 .message-container p {
 	text-align: center;
 	line-height: 30px;
-	text-shadow: 1px 1px 2px #747474;;
+	text-shadow: 1px 1px 2px #747474;
+	width: 120px;
+	background-color: var(--light-pink);
+	color: var(--dark);
+	font-family: 'Merriweather', serif;
 }
 
 .title-container {

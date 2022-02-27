@@ -97,17 +97,13 @@ guessRows.forEach((guessRow, guessRowIndex) => {
 	})
 })
 
-// const handleInput = (input) => {
-// 	console.log('input', input)
-// }
-
 keys.forEach(key => {
 	const buttonElement = document.createElement('button')
 	buttonElement.textContent = key
 	buttonElement.setAttribute('id', key)
 	buttonElement.addEventListener('click', () => handleClick(key))
 	keyboard.append(buttonElement)
-})
+});
 
 const handleClick = (letter) => {
 	if (letter === 'Enter') {
@@ -151,10 +147,11 @@ const deleteTile = () => {
 // 	A function to check if the user's guess is correct
 const checkTile = () => {
 	const guess = guessRows[thisRow].join('')
-	console.log(guessRows[thisRow], 'I am new')
+
+	// console.log(guessRows[thisRow], 'I am new')
 
 	// Breaks check before it processes as guess -- RE
-	if (guessRows[thisRow].join('').length != 5){
+	if (guessRows[thisRow].join('').length != 5) {
 		console.log("row NOT full on enter click")
 		return
 	}
@@ -166,6 +163,7 @@ const checkTile = () => {
 	// console.log(guess, "i am guess")
 
 	if (thisTile === 5) {
+		addColor()
 		console.log('you guessed ' + guess + '...and the word was ' + word)
 		if (word == guess) {
 			displayMessage(`${apiResponseData[0].fname} you're ${apiResponseData[0].percentage}% compatible with ${apiResponseData[0].sname}`)
@@ -178,24 +176,23 @@ const checkTile = () => {
 				displayMessage("Game Over!")
 				isGameOver = false
 				return
-		}
-		// moves on to the next line and adds a word of encouragement
-		if (thisRow < 5) {
-			displayMessage("Try Again!")
-			thisRow++
-			thisTile = 0
+			}
+			// moves on to the next line and adds a word of encouragement
+			if (thisRow < 5) {
+				displayMessage("Try Again!")
+				thisRow++
+				thisTile = 0
+			} 
 		}
 	}
 }
-}
-
 
 // A function to display custom message if the user's guess is right
 const displayMessage = (message) => {
 	const messageElement = document.createElement('p')
 	messageElement.textContent = message
 
-	console.log(typeof(messageText.lastChild))
+	console.log(typeof (messageText.lastChild))
 	console.log(messageText)
 
 	// remove repeat iterations of 'try again' -- RE
@@ -206,6 +203,29 @@ const displayMessage = (message) => {
 	messageText.appendChild(messageElement)
 }
 
+// // A function to add colors behind letters in the guessRows if the letters are in the words
+// function addColor() {
+// 	for (let i = 0; i < word.length; i++) {
+// 		const tile = document.querySelector('.tile-' + thisRow + '-' + i)
+// 		if (tile.textContent === word[i]) {
+// 			tile.style.backgroundColor = '#00ff00'
+// 		}
+// 	}
+// }
+
+// A function to add colors behind letters in the guessRows if the letters are in the words
 const addColor = () => {
-	document.querySelector('guessRow-' + thisRow + '-' + thisTile).style.backgroundColor = 'red'
+	const rowTiles = document.querySelector('.guessRow-' + thisRow).childNodes
+	rowTiles.forEach((tile, index) => {
+		const tileLetter = tile.getAttribute('data')
+
+		if (tileLetter === word[index]) {
+			tile.style.backgroundColor = '#ca165e'
+			tile.style.color = '#fff'
+		} else if (word.includes(tileLetter)) {
+			tile.style.backgroundColor = '#ffadbb'
+		} else {
+			tile.style.backgroundColor = '#D6D6D6'
+		}
+	})
 }
