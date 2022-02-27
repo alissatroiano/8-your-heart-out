@@ -109,7 +109,6 @@ body {
 	width: 80vw;
 	height: auto !important;
 	padding: 2em;
-	background-color: var(--light-pink);
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5em;
@@ -117,10 +116,13 @@ body {
 }
 
 .center-form {
-	width: 70vw;
+	width: 50vw;
 	margin-left: auto;
 	margin-right: auto;
-	
+	background-color: rgb(190, 163, 167, 0.6);
+	border-radius: 10px;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 .center-form > h1 {
@@ -134,7 +136,6 @@ body {
 	line-height: 2em;
 }	
 	
-
 #love-comp {
 	color: var(--intense-red);
 	font-weight: bolder;
@@ -150,6 +151,7 @@ body {
 .form-group label {
 	margin-bottom: 4px;
 }
+
 .user-input {
 	border: 2px solid var(--intense-red);
 	background-color: var(--light-bc);
@@ -159,14 +161,14 @@ body {
 	margin-right: auto;
 }
 
-
-.user-input:focus { /*change this style*/
+.user-input:focus { 
 	box-shadow: 0px 1px 11px 6px var(--intense-red);
 	border:none;
 }
 
 .btn-cont {
 	text-align: center;
+	margin-top: 3em;
 }
 
 #nameButton {
@@ -178,8 +180,11 @@ body {
 	border-radius: 5px; 
 }
 
-#welcome > *{
-	border: 2px solid red;
+#nameButton:hover {
+	background-color: var(--light-bc);
+	color: var(--intense-red);
+	font-weight: bold;
+	box-shadow: 0 0 10px 5px var(--intense-red);
 }
 
 /* -------------------Footer*/
