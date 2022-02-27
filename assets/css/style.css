@@ -116,19 +116,23 @@ body {
 	margin-bottom: 3em;
 }
 
-#welcome > h1 {
+.center-form {
+	width: 70vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center-form > h1 {
 	font-size: 2rem;
 	text-align: center;
 	padding-bottom: 1.5em;
 }
 
-#welcome > p {
+.center-form > p {
 	padding: 0 2em;
 	line-height: 2em;
-	width: 70vw;
-	margin-left: auto;
-	margin-right: auto;
-}
+}	
+	
 
 #love-comp {
 	color: var(--intense-red);
@@ -137,17 +141,26 @@ body {
 }
 
 .form-group {
-	width: 70vw;
+	width: 100%;
 	text-align: center;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.8em;
 }
 
-.form-group input {
+.form-group label {
+	margin-bottom: 4px;
+}
+.user-input {
 	border: 2px solid var(--intense-red);
 	background-color: var(--light-bc);
-	padding: 2px;
-	font-size: 1rem;
-	text-align: center !important;
+	padding: .5em;
+	font-size: 1.2rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.user-input:focus { /*change this style*/
+	box-shadow: 0px 1px 11px 6px var(--intense-red);
+	border:none;
 }
 
 #welcome > *{
