@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300;1,400&display=swap');
 
 :root {
-	--dark: #230005;
-	--light-bc: #fffefc;
-	--intense-red: #ca165e;
-	--light-pink: #ffc0cb;
-	--silver-pink: #bea3a7;
+	--dark: rgb(35, 0, 5);
+	--light-bc: rgb(255, 254, 252);
+	--intense-red: rgb(202, 22, 94);
+	--light-pink: rgb(255, 192, 203);
+	--silver-pink: rgb(190, 163, 167);
 }
 
 
@@ -65,7 +65,7 @@ body {
 	max-width: 20vw;
 	margin-left: auto;
 	display: flex;
-	gap: .8em;
+	gap: 0.8em;
 	align-items: center;
 	
 }
@@ -80,17 +80,6 @@ body {
 	font-size: 3.5rem;
 }
 
-.custom-button {	
-    border-radius: 7px;
-    /*box-shadow: 3px 3px 2px rgba(0, 0, 0, .5);*/
-    width: fit-content;
-    transition-duration: .25s;
-    color: var(--dark);
-	position: relative;
-	font-weight: bolder;
-	font-weight: 900;
-	text-decoration: none;
-}
 
 #btn-game-left {
 	margin-left: auto;
@@ -99,7 +88,9 @@ body {
 
 #btn-game-right {
 	padding-top: 15px;
+	margin-left: 10px;
 }
+
 .fa-keyboard,
 .fa-gamepad {
 	font-size: 2rem;
@@ -122,7 +113,6 @@ body {
 /* -------------------- Game / Index */
 
 .game-container {
-	/* height: 90vh; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -141,16 +131,10 @@ body {
 	border: 2px solid var(--intense-red);
 	border-radius: 30px;
 	padding: .3em .8em;
+	position: absolute;
 	right: 2em;
 	top: 1em;
 	transition: transform 1s;
-	margin-left: auto;
-	position: relative;
-}
-
-.btn-help:active, .btn-help:focus {
-	background-color: #961146;
-	color: #D6D6D6;
 }
 
 .fa-question {
@@ -171,13 +155,13 @@ body {
 
 .message-container {
 	height: 30px;
+	width: 120px;
 }
 
 .message-container p {
 	text-align: center;
 	line-height: 30px;
 	text-shadow: 1px 1px 2px #747474;
-	width: 120px;
 	background-color: var(--light-pink);
 	color: var(--dark);
 	font-family: 'Merriweather', serif;
@@ -244,7 +228,11 @@ body {
 
 /* -------------------- Developer Page */
 .developer-container {
-	min-height: calc(100vh - 100px)
+	/*min-height: calc(100vh - 100px);*/
+	margin-top: 7em;
+	margin-bottom: 7em;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .card-custom {
@@ -254,10 +242,8 @@ body {
 				inset -2px -2px 4px rgba(51, 51, 51, 0.493),
 				inset 2px -2px 4px rgba(51, 51, 51, 0.493),
 				-2px -2px 4px rgba(51, 51, 51, 0.699);
-	border-color: #961146;
-	border-width: 2px;
+				border: 2px solid var(--intense-red);
 	border-radius: 10px;
-	color: #a7a7a7;
 }
 
 .card-height {
@@ -284,27 +270,48 @@ body {
 }
 
 .name-text {
-	color: #444;
-	text-shadow: -2px -2px 2px #faedc693,
-				1px 1px 0px #ffadbb,
-				2px 2px 1px rgba(0, 0, 0, .55);
+	color: var(--dark);
+	font-family: 'Merriweather';
+	text-align: center;
+	text-shadow:
+				1px 1px 0px var(--light-pink),
+				2px 2px 1px var(--silver-pink);
 }
 
 .info-text {
-	color: #230005;
+	color: var(--dark);
 	text-shadow:
 	 /* -2px -2px 2px #faedc65b */
 				1px 1px 2px #747474
 				/* 2px 2px 1px rgba(0, 0, 0, .75), */
 				/* 3px 3px rgba(0, 0, 0, 0.452) */
 				;
-	color: #010203;
-	text-shadow: 1px 1px 2px #747474;
+	text-align: center;
+	line-height: 20px;
+	margin-top: 2em;
 }
 
 strong {
 	color: var(--light-pink);
 	font-weight: 900;
+}
+
+
+.media-icons {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.fa-linkedin,
+.fa-github-square {
+	color: var(--intense-red);
+	font-size: 2rem;
+	transition: transform .5s;
+}
+
+.fa-linkedin:hover,
+.fa-github-square:hover {
+	transform: scale(1.3);
 }
 /*For mobile screens*/
 @media (max-width: 991px) {
