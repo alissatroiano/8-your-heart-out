@@ -1,5 +1,3 @@
-const config = ('./config');
-
 const welcomeContainer = document.getElementById('welcome');
 const gameContainer = document.getElementById('game');
 
@@ -19,27 +17,6 @@ const keyboard = document.querySelector('.key-container')
 const messageText = document.querySelector('.message-container')
 const nameButton = document.getElementById('nameButton')
 
-const token = config.MY_API_TOKEN;
-const key = config.SECRET_API_KEY;
-
-let apiResponseData = []
-
-
-document.getElementById("nameButton").addEventListener('click', async function () {
-	const fname = document.getElementById('firstName').value;
-	const sname = document.getElementById('secondName').value;
- 
-	const response = await fetch(`https://love-calculator.p.rapidapi.com/getPercentage?sname=${fname}&fname=${sname}`, {
-		"method": "GET",
-		"headers": {
-			"x-rapidapi-host": `${token}`,
-			"x-rapidapi-key": `${key}`
-		}
-	});
-	const responseData = await response.json();
-	console.log(responseData);
-	return apiResponseData.push(responseData);
-});
 
 
 // const word = ['LOVER']
@@ -167,14 +144,14 @@ const checkTile = () => {
 		addColor()
 		console.log('you guessed ' + guess + '...and the word was ' + word)
 		if (word == guess) {
-			displayMessage(`${apiResponseData[0].fname} you're ${apiResponseData[0].percentage}% compatible with ${apiResponseData[0].sname}`)
+			displayMessage('Brilliant!')
 			console.log(apiResponseData[0].percentage);
 			isGameOver = true
 			return
 
 		} else {
 			if (thisRow >= 5) {
-				displayMessage("Game Over!")
+				displayMessage('Sorry! The word was ' + word)
 				isGameOver = false
 				return
 			}
