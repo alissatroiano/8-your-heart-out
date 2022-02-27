@@ -55,6 +55,17 @@ Developers: The page that shows the developers of the game and their contact inf
 - The developer page contains 6 cards with each a photo and information about the collaborators on this project.
 - At the bottom of each card are links presented to both Github and Linkedin for easy connection. 
 
+### strategy-table 
+<img width="744" alt="strategy-table" src="https://user-images.githubusercontent.com/95313496/155903746-4559849b-1152-4220-9913-2d6e0dcde8d7.png">
+
+### colour theary 
+The classic colors related to love and Valentine's Day are red and white. Red represents deep passion and respect for your loved ones, and invites us to action, motivates us, this color represents a perfect match for Valentine's Day. White stands for a new beginning. If you blend the two colors, you get the pink color that represents playfulness and that is the color of first love. And to represent detached and neutral emotions is gray.
+ 
+Therefore, these colors have been implemented in the game Smitten. Representing a true match for the letter in the hidden word and in the correct spot, is the color: red rose; getting the correct letter, but not in the right spot is represented by the light-pink; the silver-pink shows that we don't have a match, it isn't in the hidden word or in the right spot. Finally, porcelain color is a new opportunity to know whether you get a match or not. 
+
+![Picture1](https://user-images.githubusercontent.com/95313496/155903778-58a8a2d2-0359-4ece-9753-bc0da5dad2ba.png)
+
+
 ### Wireframes
 ![page 1 smitten](https://user-images.githubusercontent.com/95313496/155887954-bdab7e8e-5f10-4590-b0d0-8ac2d226dbf8.jpg)
 ![page2 smitten](https://user-images.githubusercontent.com/95313496/155887970-e389c4d2-d79c-4535-b40e-6bc74ce80b47.jpg)
@@ -66,9 +77,7 @@ All wireframes were created with Balsamiq wireframing software and can be viewed
 
 - [Google Fonts](https://fonts.google.com/)
 - [Bootstrap 5](https://getbootstrap.com/docs/5.1/)
-- [Git]
-- [gitpod]
-- [gitpages]
+
 - 
 ### Languages Used
 
@@ -76,7 +85,15 @@ All wireframes were created with Balsamiq wireframing software and can be viewed
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
+HTML was used for the website/app and allows the game to to be viewed.
+CSS and bootsrap to style the html and javascript.
+Javascript was used to create the logic for the game.
+
 ### Libraries and Programs Used
+- rapid api(https://rapidapi.com/ajith/api/love-calculator/details)
+
+rapid api was used for the logic for the game allow us to match the two peoples names.
+
 
 ### Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows:
