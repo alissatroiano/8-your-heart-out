@@ -88,7 +88,7 @@ body {
 
 #btn-game-right {
 	padding-top: 15px;
-	margin-left: 10px;
+	margin-left: 15px;
 }
 
 .fa-keyboard,
@@ -216,9 +216,6 @@ body {
 	border: 2px solid var(--intense-red);
 	border-radius: 30px;
 	padding: .3em .8em;
-	position: absolute;
-	right: 2em;
-	top: 1em;
 	transition: transform 1s;
 }
 
@@ -229,14 +226,12 @@ body {
 }
 
 .btn-help:hover {
+	box-shadow: 0 0 10px 5px var(--intense-red) !important;
 	transform: scale(1.3);
-	background-color: var(--light-pink);
 	border: none;
 }
 
-.fa-question:hover {
-	color: var(--light-bc);
-}
+
 
 .message-container {
 	height: 30px;
