@@ -1,12 +1,12 @@
-const x = document.getElementById('welcome');
-const y = document.getElementById('game');
+const welcomeContainer = document.getElementById('welcome');
+const gameContainer = document.getElementById('game');
 
 function pageLoad() {
-	y.style.display = 'none';
+	gameContainer.style.display = 'none';
 }
 document.getElementById("nameButton").addEventListener('click', function () {
-	y.style.display = 'block';
-	x.style.display = 'none';
+	gameContainer.style.display = 'block';
+	welcomeContainer.style.display = 'none';
 });
 
 // Game logic learned from https://www.youtube.com/watch?v=mpby4HiElek and customized by the development team 
@@ -16,24 +16,27 @@ const keyboard = document.querySelector('.key-container')
 const messageText = document.querySelector('.message-container')
 const nameButton = document.getElementById('nameButton')
 
-// const token = config.MY_API_TOKEN;
-// const key = config.SECRET_API_KEY;
+const token = config.MY_API_TOKEN;
+const key = config.SECRET_API_KEY;
 
-// document.getElementById("button").addEventListener('click', function () {
-// 	const fname = document.getElementById('firstName').value;
-// 	const sname = document.getElementById('secondName').value;
+let apiResponseData = []
+
+
+document.getElementById("nameButton").addEventListener('click', async function () {
+	const fname = document.getElementById('firstName').value;
+	const sname = document.getElementById('secondName').value;
  
-
-// 	return fetch(`https://love-calculator.p.rapidapi.com/getPercentage?sname=${fname}&fname=${sname}`, {
-// 		"method": "GET",
-// 		"headers": {
-// 			"x-rapidapi-host": `${token}`,
-// 			"x-rapidapi-key": `${key}`
-// 		}
-// 		})
-// 		.then(response => response.json())
-// 		.then(result => console.log(result))  
-// });
+	const response = await fetch(`https://love-calculator.p.rapidapi.com/getPercentage?sname=${fname}&fname=${sname}`, {
+		"method": "GET",
+		"headers": {
+			"x-rapidapi-host": `${token}`,
+			"x-rapidapi-key": `${key}`
+		}
+	});
+	const responseData = await response.json();
+	console.log(responseData);
+	return apiResponseData.push(responseData);
+});
 
 
 // const word = ['LOVER']
@@ -165,7 +168,8 @@ const checkTile = () => {
 	if (thisTile === 5) {
 		console.log('you guessed ' + guess + '...and the word was ' + word)
 		if (word == guess) {
-			displayMessage("Brilliant!")
+			displayMessage(`${apiResponseData[0].fname} you're ${apiResponseData[0].percentage}% compatible with ${apiResponseData[0].sname}`)
+			console.log(apiResponseData[0].percentage);
 			isGameOver = true
 			return
 
