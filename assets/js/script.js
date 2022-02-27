@@ -118,6 +118,7 @@ const handleClick = (letter) => {
 		return
 	}
 	guessLetter(letter)
+	addColorKeyboard()
 }
 
 // A function to display letter in tile when user clicks on it
@@ -147,7 +148,6 @@ const deleteTile = () => {
 }
 
 
-// 	A function to check if the user's guess is correct
 const checkTile = () => {
 	const guess = guessRows[thisRow].join('')
 
@@ -206,29 +206,40 @@ const displayMessage = (message) => {
 	messageText.appendChild(messageElement)
 }
 
-// // A function to add colors behind letters in the guessRows if the letters are in the words
-// function addColor() {
-// 	for (let i = 0; i < word.length; i++) {
-// 		const tile = document.querySelector('.tile-' + thisRow + '-' + i)
-// 		if (tile.textContent === word[i]) {
-// 			tile.style.backgroundColor = '#00ff00'
-// 		}
-// 	}
-// }
+// A function to add colors behind keyboard buttons if the user clicks on letters that are in the word
+const addColorKeyboard = (letter, color) => {
+	const keyButton = document.querySelector('#' + letter)
+	keyButton.style.backgroundColor = color
+}
 
 // A function to add colors behind letters in the guessRows if the letters are in the words
 const addColor = () => {
-	const rowTiles = document.querySelector('.guessRow-' + thisRow).childNodes
-	rowTiles.forEach((tile, index) => {
-		const tileLetter = tile.getAttribute('data')
+	const row = document.querySelector('.guessRow-' + thisRow).childNodes
+	let checkTile = word
+	const guess = []
 
-		if (tileLetter === word[index]) {
-			tile.style.backgroundColor = '#ca165e'
-			tile.style.color = '#fff'
-		} else if (word.includes(tileLetter)) {
-			tile.style.backgroundColor = '#ffadbb'
-		} else {
-			tile.style.backgroundColor = '#D6D6D6'
+	row.forEach(tile => {
+		guess.push({ letter: tile.getAttribute('data'), color: 'silver-overlay' })	
+	})
+
+	guess.forEach((guess, index) => {
+		if (guess.letter == word[index]) {
+			guess.color = "rose-overlay"
+			checkTile = checkTile.replace(guess.letter, '')
+	}	
+})
+
+	guess.forEach(guess => {
+		if (checkTile.includes(guess.letter)) {
+			guess.color = "pink-overlay"
+			checkTile = checkTile.replace(guess.letter, '')
 		}
+	})
+
+	row.forEach((tile, index) => {
+		setTimeout(() => {
+			tile.classList.add(guess[index].color)
+			addColorKeyboard(guess[index].letter, guess[index].color)
+		}, 500 + index)
 	})
 }
