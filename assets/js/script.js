@@ -126,27 +126,41 @@ const deleteTile = () => {
 }
 
 // Add color to keyboard
-// function colorKeyboard(guessedWord) {
-// 	console.log(guessedWord)
-// 	let wordArray = word.split("")
-// 	guessedWord.split("").forEach(addColor);
-// 	function addColor(item, index) {
-// 		for (i=0; i < wordArray.length; i++){
+function colorKeyboard(guessedWord) {
+	console.log(guessedWord)
+	let wordArray = word.split("")
+	guessedWord.split("").forEach(addColor);
+	function addColor(item, index) {
+		for (i=0; i < wordArray.length; i++){
 
-// 			// console.log(wordArray[i])
-// 			// console.log(typeof(index))
+			console.log(item)
+			console.log(wordArray[i])
+			// console.log(typeof(index))
+			console.log((index))
+			console.log("")
+			console.log("")
+			console.log("")
 
-// 			// if (item == wordArray[i]) {
-// 			// 	console.log("I am correct11--------------------------------")
-// 			// 	document.getElementById(item).style.backgroundColor = "rgb(202, 22, 94)";
-// 			// } else if (index == wordArray.length-1) {
-// 			// 	document.getElementById(item).style.backgroundColor = "rgb(128, 110, 112)";
-// 			// }
-// 		}
-// 		console.log(item)
-// 		// console.log(wordArray)
-// 	}
-// }
+			if (item == wordArray[i] && index == i) {
+				// console.log(item, " I am correct11--------------------------------")
+				// console.log(wordArray[i], " I am correct11--------------------------------")
+				document.getElementById(item).style.backgroundColor = "rgb(202, 22, 94)";
+				return
+			} else if(item == wordArray[i] && document.getElementById(item).style.backgroundColor != "rgb(202, 22, 94)" ) {
+				// console.log(item, " I am partial>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+				// console.log(wordArray[i], " I am partial>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+				document.getElementById(item).style.backgroundColor = "rgb(255, 173, 187)";
+				return
+			} else if (document.getElementById(item).style.backgroundColor != "rgb(202, 22, 94)" || document.getElementById(item).style.backgroundColor != "rgb(255, 173, 187)") {
+				// console.log(item, " end of array")
+				// console.log(i, " end of array")
+				document.getElementById(item).style.backgroundColor = "rgb(128, 110, 112)";
+			}
+		}
+		console.log(item)
+		// console.log(wordArray)
+	}
+}
 
 
 
@@ -169,7 +183,7 @@ const checkTile = () => {
 	// console.log(guess, "i am guess")
 
 	if (thisTile === 5) {
-		// colorKeyboard(guess)
+		colorKeyboard(guess)
 		addColor()
 		console.log('you guessed ' + guess + '...and the word was ' + word)
 		if (word == guess) {
