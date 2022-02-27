@@ -248,6 +248,7 @@ body {
 	border: 2px solid var(--intense-red);
 	border-radius: 30px;
 	padding: .3em .8em;
+	/* position: absolute; */
 	right: 2em;
 	top: 1em;
 	transition: transform 1s;
