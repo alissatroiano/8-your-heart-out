@@ -212,9 +212,10 @@ const displayMessage = (message) => {
 // A function to add colors behind letters in the guessRows if the letters are in the words
 const addColor = () => {
 	const rowTiles = document.querySelector('.guessRow-' + thisRow).childNodes
+	
 	rowTiles.forEach((tile, index) => {
-		const tileLetter = tile.getAttribute('data')
 
+		const tileLetter = tile.getAttribute('data')
 		if (tileLetter === word[index]) {
 			tile.style.backgroundColor = '#ca165e'
 			tile.style.color = '#fff'
@@ -222,6 +223,23 @@ const addColor = () => {
 			tile.style.backgroundColor = '#ffadbb'
 		} else {
 			tile.style.backgroundColor = '#D6D6D6'
+		}
+	})
+}
+
+
+// A function to add color to the keys if the letters are in the words
+const colorKeys = () => {
+	const keys = document.querySelectorAll('button')
+	keys.forEach((key, index) => {
+		const keyLetter = key.textContent
+		if (keyLetter == word[index]) {
+			key.style.backgroundColor = '#ca165e'
+			key.style.color = '#fff'
+		} else if (word.includes(keyLetter)) {
+			key.style.backgroundColor = '#ffadbb'
+		} else {
+			key.style.backgroundColor = '#D6D6D6'
 		}
 	})
 }
