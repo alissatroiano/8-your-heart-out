@@ -122,7 +122,7 @@ body {
 /* -------------------- Game / Index */
 
 .game-container {
-	height: 90vh;
+	/* height: 90vh; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -165,16 +165,16 @@ body {
 
 .message-container {
 	height: 30px;
-	width: 120px;
-	background-color: var(--light-pink);
-	color: var(--dark);
-	font-family: 'Merriweather', serif;
 }
 
 .message-container p {
 	text-align: center;
 	line-height: 30px;
-	text-shadow: 1px 1px 2px #747474;;
+	text-shadow: 1px 1px 2px #747474;
+	width: 120px;
+	background-color: var(--light-pink);
+	color: var(--dark);
+	font-family: 'Merriweather', serif;
 }
 
 .title-container {
