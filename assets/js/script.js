@@ -1,3 +1,5 @@
+const config = ('./config');
+
 const welcomeContainer = document.getElementById('welcome');
 const gameContainer = document.getElementById('game');
 
