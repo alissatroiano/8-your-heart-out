@@ -4,7 +4,8 @@ const welcomeContainer = document.getElementById('welcome');
 const gameContainer = document.getElementById('game');
 
 function pageLoad() {
-	gameContainer.style.display = 'none';
+// Hide the game container until the nameButton is clicked
+	gameContainer.style.display = 'none'
 }
 document.getElementById("nameButton").addEventListener('click', function () {
 	gameContainer.style.display = 'block';
