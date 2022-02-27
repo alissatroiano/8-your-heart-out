@@ -292,10 +292,6 @@ body {
 	color: #a7a7a7;
 }
 
-.card-height {
-	/* height: 30rem; */
-}
-
 .card-filter {
 	position: absolute;
 	height: 100%;
@@ -306,6 +302,11 @@ body {
 	border-top-left-radius: 8px;
 }
 
+.card-links a {
+	position: relative;
+	bottom: 0;
+}
+
 .card-custom img{
 	/* max-height:5rem; */
 	/* border-bottom: 1px solid #230005; */
@@ -313,6 +314,16 @@ body {
 	border-top-right-radius: 8px;
 	border-top-left-radius: 8px;
 
+}
+
+.developer-content-spacing {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between
+}
+
+.developer-content-spacing p {
+	line-height: 1.5;
 }
 
 .name-text {
