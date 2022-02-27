@@ -229,10 +229,11 @@ body {
 
 /* -------------------- Developer Page */
 .developer-container {
-	min-height: calc(100vh - 100px);
+	/*min-height: calc(100vh - 100px);*/
 	margin-top: 7em;
-	margin-left: 1.5em;
-	margin-right: 1.5em;
+	margin-bottom: 7em;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .card-custom {
