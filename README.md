@@ -32,6 +32,11 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
 ### User Stories
 
 ### Wireframes
+![page 1 smitten](https://user-images.githubusercontent.com/95313496/155887954-bdab7e8e-5f10-4590-b0d0-8ac2d226dbf8.jpg)
+![page2 smitten](https://user-images.githubusercontent.com/95313496/155887970-e389c4d2-d79c-4535-b40e-6bc74ce80b47.jpg)
+![page 3 smitten](https://user-images.githubusercontent.com/95313496/155887976-252b5596-04db-4d42-8c01-ed02d46c4fd1.jpg)
+![page 4 smitten](https://user-images.githubusercontent.com/95313496/155887980-cff7d907-51cb-42b8-8457-07b4303c5558.jpg)
+All wireframes were created with Balsamiq wireframing software and can be viewed entirely in this document.
 
 ## Technologies Used
 
