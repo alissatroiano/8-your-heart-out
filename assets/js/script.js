@@ -216,11 +216,12 @@ const addColor = () => {
 		const tileLetter = tile.getAttribute('data')
 
 		if (tileLetter === word[index]) {
-			tile.style.backgroundColor = '#00ff00'
+			tile.style.backgroundColor = '#ca165e'
+			tile.style.color = '#fff'
 		} else if (word.includes(tileLetter)) {
-			tile.style.backgroundColor = '#ff0000'
+			tile.style.backgroundColor = '#ffadbb'
 		} else {
-			tile.style.backgroundColor = '#666666'
+			tile.style.backgroundColor = '#D6D6D6'
 		}
 	})
 }
