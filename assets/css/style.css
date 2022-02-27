@@ -51,24 +51,6 @@ body {
 	max-width: 100vw;
 }
 
-.left {
-	margin-right: auto;
-	max-width: 20vw;
-}
-
-.center {
-	max-width: 50vw;
-	text-align: center;
-}
-
-.right{
-	max-width: 20vw;
-	margin-left: auto;
-	display: flex;
-	gap: 0.8em;
-	align-items: center;
-	
-}
 
 #diff-letter {
 	border: 2px solid var(--intense-red);
@@ -80,6 +62,10 @@ body {
 	font-size: 3.5rem;
 }
 
+.text-end,
+.question {
+	padding-top: 19px;
+}
 
 #btn-game-left {
 	margin-left: auto;
@@ -88,7 +74,7 @@ body {
 
 #btn-game-right {
 	padding-top: 15px;
-	margin-left: 10px;
+	margin-left: 15px;
 }
 
 .fa-keyboard,
@@ -112,7 +98,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5em;
-	margin-bottom: 3em;
+
 }
 
 .center-form {
@@ -248,9 +234,6 @@ body {
 	border: 2px solid var(--intense-red);
 	border-radius: 30px;
 	padding: .3em .8em;
-	/* position: absolute; */
-	right: 2em;
-	top: 1em;
 	transition: transform 1s;
 }
 
@@ -261,13 +244,9 @@ body {
 }
 
 .btn-help:hover {
+	box-shadow: 0 0 10px 5px var(--intense-red) !important;
 	transform: scale(1.3);
-	background-color: var(--light-pink);
 	border: none;
-}
-
-.fa-question:hover {
-	color: var(--light-bc);
 }
 
 .message-container {
@@ -424,7 +403,6 @@ strong {
 	font-weight: 900;
 }
 
-
 .media-icons {
 	display: flex;
 	justify-content: space-evenly;
@@ -455,12 +433,6 @@ strong {
 		display: none;
 	}
 
-	.btn-help {
-		top: 0.5em;
-		right: 0.5em;
-		transform: scale(0.8) translateX(10px) translateY(10px); 
-	}
-
 	#welcome {
 		width: 100vw;
 	}
@@ -483,21 +455,16 @@ strong {
 
 	.container-fluid {
 		padding: 0 0.5em;
-	
 		margin-bottom: 0;
 	}
-	
-	.left {
-		display: none;
-	}
 
-	.right {
-		max-width: 30vw;
-		gap: 20px;
-		transform: scale(0.9);
+	.text-end,
+	.question {
+		transform: scale(.7);
 	}
 
 	#btn-game-left {
+		
 		margin-left: 0;
 		line-height: 5px;
 	}
