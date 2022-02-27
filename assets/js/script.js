@@ -1,13 +1,16 @@
+
+const x = document.getElementById('welcome');
+const y = document.getElementById('game');
+
 const welcomeContainer = document.getElementById('welcome');
 const gameContainer = document.getElementById('game');
 
 function pageLoad() {
-// Hide the game container until the nameButton is clicked
-	gameContainer.style.display = 'none'
+	y.style.display = 'none';
 }
 document.getElementById("nameButton").addEventListener('click', function () {
-	gameContainer.style.display = 'block';
-	welcomeContainer.style.display = 'none';
+	y.style.display = 'block';
+	x.style.display = 'none';
 });
 
 // Game logic learned from https://www.youtube.com/watch?v=mpby4HiElek and customized by the development team 
@@ -16,7 +19,6 @@ const tileDisplay = document.querySelector('.tile-container')
 const keyboard = document.querySelector('.key-container')
 const messageText = document.querySelector('.message-container')
 const nameButton = document.getElementById('nameButton')
-
 
 
 // const word = ['LOVER']
@@ -123,6 +125,8 @@ const deleteTile = () => {
 	}
 }
 
+
+// 	A function to check if the user's guess is correct
 const checkTile = () => {
 	const guess = guessRows[thisRow].join('')
 
@@ -144,8 +148,11 @@ const checkTile = () => {
 		addColor()
 		console.log('you guessed ' + guess + '...and the word was ' + word)
 		if (word == guess) {
+
+			displayMessage("Brilliant!")
+
 			displayMessage('Brilliant!')
-			console.log(apiResponseData[0].percentage);
+
 			isGameOver = true
 			return
 
@@ -181,56 +188,29 @@ const displayMessage = (message) => {
 	messageText.appendChild(messageElement)
 }
 
-// A function to add colors behind keyboard buttons if the user clicks on letters that are in the word
-const addColorKeyboard = (buttonElement, color) => {
-	const letterKey = document.getElementById(buttonElement)
-	letterKey.classList.add(color)
-}
+// // A function to add colors behind letters in the guessRows if the letters are in the words
+// function addColor() {
+// 	for (let i = 0; i < word.length; i++) {
+// 		const tile = document.querySelector('.tile-' + thisRow + '-' + i)
+// 		if (tile.textContent === word[i]) {
+// 			tile.style.backgroundColor = '#00ff00'
+// 		}
+// 	}
+// }
 
 // A function to add colors behind letters in the guessRows if the letters are in the words
 const addColor = () => {
-	const row = document.querySelector('.guessRow-' + thisRow).childNodes
-	let checkTile = word
-	const guess = []
+	const rowTiles = document.querySelector('.guessRow-' + thisRow).childNodes
+	rowTiles.forEach((tile, index) => {
+		const tileLetter = tile.getAttribute('data')
 
-	row.forEach(tile => {
-		guess.push({ letter: tile.getAttribute('data'), color: 'silver-overlay' })	
-	})
-
-	guess.forEach((guess, index) => {
-		if (guess.letter == word[index]) {
-			guess.color = "rose-overlay"
-			checkTile = checkTile.replace(guess.letter, '')
-	}	
-})
-
-	guess.forEach(guess => {
-		if (checkTile.includes(guess.letter)) {
-			guess.color = "pink-overlay"
-			checkTile = checkTile.replace(guess.letter, '')
+		if (tileLetter === word[index]) {
+			tile.style.backgroundColor = '#ca165e'
+			tile.style.color = '#fff'
+		} else if (word.includes(tileLetter)) {
+			tile.style.backgroundColor = '#ffadbb'
+		} else {
+			tile.style.backgroundColor = '#D6D6D6'
 		}
 	})
-
-	row.forEach((tile, index) => {
-		setTimeout(() => {
-			tile.classList.add(guess[index].color)
-			addColorKeyboard(guess[index].letter, guess[index].color)
-		}, 500 + index)
-	})
 }
-
-
-// remove modal
-// let infoModal = document.getElementById("staticBackdrop");
-// infoModal.addEventListener('click', function () {
-// 	infoModal.removeAttribute("role")
-// 	infoModal.setAttribute("aria-hidden", "true")
-// 	infoModal.removeAttribute("aria-modal")
-	
-// 	console.log(document.querySelectorAll(".modal-backdrop").length)
-// 	let findModalBackdrops = document.querySelectorAll(".modal-backdrop").length
-// 	for (i=0; i<findModalBackdrops; i++){
-// 			document.getElementsByClassName("modal-backdrop")[0].remove()
-// 		}
-// 	infoModal.style.display = "none"
-// } )
