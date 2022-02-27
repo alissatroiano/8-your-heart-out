@@ -311,6 +311,10 @@ body {
 	align-items: center;
 }
 
+.tile-flip {
+	animation: 0.5s linear flipping;
+}
+
 .pink-overlay {
 	background-color: rgb(202, 22, 94);
 }
