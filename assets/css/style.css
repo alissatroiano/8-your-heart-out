@@ -322,6 +322,34 @@ body {
 	align-items: center;
 }
 
+.tile-flip {
+	animation: 0.5s linear flipping;
+}
+
+@keyframes flipping {
+	0% {
+		transform: rotateX(0deg);
+	}
+	50% {
+		transform: rotateX(90deg);
+	}
+	100% {
+		transform: rotateX(0deg);
+	}
+}
+
+.pink-overlay {
+	background-color: rgb(202, 22, 94);
+}
+
+.rose-overlay {
+	background-color: rgb(255, 192, 203);
+}
+
+.silver-overlay {
+	background-color: rgb(190, 163, 167);
+}
+
 /* -------------------- Developer Page */
 .developer-container {
 	/*min-height: calc(100vh - 100px);*/
