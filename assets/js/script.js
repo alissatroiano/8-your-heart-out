@@ -25,21 +25,24 @@ const key = config.SECRET_API_KEY;
 let apiResponseData = []
 
 
-document.getElementById("nameButton").addEventListener('click', async function () {
-	const fname = document.getElementById('firstName').value;
-	const sname = document.getElementById('secondName').value;
- 
-	const response = await fetch(`https://love-calculator.p.rapidapi.com/getPercentage?sname=${fname}&fname=${sname}`, {
-		"method": "GET",
-		"headers": {
-			"x-rapidapi-host": `${token}`,
-			"x-rapidapi-key": `${key}`
-		}
-	});
-	const responseData = await response.json();
-	console.log(responseData);
-	return apiResponseData.push(responseData);
-});
+// removed -- re
+// document.getElementById("nameButton").addEventListener('click', async function () {
+	// removed -- RE
+	// const fname = document.getElementById('firstName').value;
+	// const sname = document.getElementById('secondName').value;
+
+	// removed -- re
+	// const response = await fetch(`https://love-calculator.p.rapidapi.com/getPercentage?sname=${fname}&fname=${sname}`, {
+	// 	"method": "GET",
+	// 	"headers": {
+	// 		"x-rapidapi-host": `${token}`,
+	// 		"x-rapidapi-key": `${key}`
+	// 	}
+	// });
+// 	const responseData = await response.json();
+// 	console.log(responseData);
+// 	return apiResponseData.push(responseData);
+// });
 
 
 // const word = ['LOVER']
@@ -146,6 +149,30 @@ const deleteTile = () => {
 	}
 }
 
+// Add color to keyboard
+// function colorKeyboard(guessedWord) {
+// 	console.log(guessedWord)
+// 	let wordArray = word.split("")
+// 	guessedWord.split("").forEach(addColor);
+// 	function addColor(item, index) {
+// 		for (i=0; i < wordArray.length; i++){
+
+// 			// console.log(wordArray[i])
+// 			// console.log(typeof(index))
+
+// 			// if (item == wordArray[i]) {
+// 			// 	console.log("I am correct11--------------------------------")
+// 			// 	document.getElementById(item).style.backgroundColor = "rgb(202, 22, 94)";
+// 			// } else if (index == wordArray.length-1) {
+// 			// 	document.getElementById(item).style.backgroundColor = "rgb(128, 110, 112)";
+// 			// }
+// 		}
+// 		console.log(item)
+// 		// console.log(wordArray)
+// 	}
+// }
+
+
 const checkTile = () => {
 	const guess = guessRows[thisRow].join('')
 
@@ -153,17 +180,18 @@ const checkTile = () => {
 
 	// Breaks check before it processes as guess -- RE
 	if (guessRows[thisRow].join('').length != 5) {
-		console.log("row NOT full on enter click")
+		// console.log("row NOT full on enter click")
 		return
 	}
 
 	// Console log block for determining correctness of program function -- RE
-	console.log("row FULL on enter click")
+	// console.log("row FULL on enter click")
 	// console.log(thisRow, "i am row")
 	// console.log(guessRows, "i am guess rows")
 	// console.log(guess, "i am guess")
 
 	if (thisTile === 5) {
+		// colorKeyboard(guess)
 		addColor()
 		console.log('you guessed ' + guess + '...and the word was ' + word)
 		if (word == guess) {
