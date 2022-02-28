@@ -6,7 +6,6 @@ const messageText = document.querySelector('.message-container');
 
 let	isGameOver = false;
 
-
 async function getRandomWord() {
     let url = 'words.json';
     try {
@@ -130,7 +129,6 @@ function colorKeyboard(guessedWord) {
 	}
 }
 
-
 // 	A function to check if the user's guess is correct
 const checkTile = () => {
 	const guess = guessRows[thisRow].join('');
@@ -182,7 +180,6 @@ const addColor = () => {
 	const rowTiles = document.querySelector('.guessRow-' + thisRow).childNodes
 	rowTiles.forEach((tile, index) => {
 		const tileLetter = tile.getAttribute('data');
-
 		if (tileLetter === word[index]) {
 			tile.style.backgroundColor = '#ca165e';
 			tile.style.color = '#fff';

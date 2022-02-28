@@ -58,6 +58,15 @@ body {
 	max-width: 100vw;
 }
 
+.diff-letter {
+	border: 2px solid var(--intense-red);
+	border-radius: 5px;
+	background-color: var(--intense-red);
+	color: var(--light-bc);
+	padding: 0 .2em;
+	margin-right: 3px;
+	font-size: 3.5rem;
+}
 
 #diff-letter {
 	border: 2px solid var(--intense-red);
