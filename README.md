@@ -4,8 +4,7 @@ Smitten is an online game for Valentine's Day inspired by the famous "Wordle Gam
 
 The rules are simple: The player must guess the hidden word of 5 characters in 6 tries. First of all, type any love word on the first line and see if there's a match. You will get a match and the tile will turn red if the letter is guessed correctly and is in the right spot. If the letter is in the word, but in the wrong position, will become pink.  And the tile will become silver if the letter doesn't match the place and isn't in the word.
 
-![Screenshot 2022-02-27 153350](https://user-images.githubusercontent.com/95313496/155888973-51f761de-c3d8-45b2-90ad-8be4d5be0ee8.jpg)
-
+![Responsive View](wireframes/responsive.png)
 
 ## Table of Contents
 
@@ -13,12 +12,13 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
   - [Table of Contents](#table-of-contents)
   - [UX](#ux)
     - [Features](#features)
-    - [User Stories](#user-stories)
+    - [strategy-table](#strategy-table)
+    - [colour theary](#colour-theary)
     - [Wireframes](#wireframes)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Libraries and Programs Used](#libraries-and-programs-used)
-  - [Deployment](#deployment)  
+  - [Deployment](#deployment)
   - [CREDITS](#credits)
   - [ACKNOWLEDGEMENTS](#acknowledgements)
  
@@ -49,20 +49,28 @@ Developers: The page that shows the developers of the game and their contact inf
 - The developer page contains 6 cards with each a photo and information about the collaborators on this project.
 - At the bottom of each card are links presented to both Github and Linkedin for easy connection. 
 
+### strategy-table 
+![tradeoff.png](wireframes/tradeoff.png)
+
+### colour theary 
+The classic colors related to love and Valentine's Day are red and white. Red represents deep passion and respect for your loved ones, and invites us to action, motivates us, this color represents a perfect match for Valentine's Day. White stands for a new beginning. If you blend the two colors, you get the pink color that represents playfulness and that is the color of first love. And to represent detached and neutral emotions is gray.
+ 
+Therefore, these colors have been implemented in the game Smitten. Representing a true match for the letter in the hidden word and in the correct spot, is the color: red rose; getting the correct letter, but not in the right spot is represented by the light-pink; the silver-pink shows that we don't have a match, it isn't in the hidden word or in the right spot. Finally, porcelain color is a new opportunity to know whether you get a match or not. 
+
+![Picture1](https://user-images.githubusercontent.com/95313496/155903778-58a8a2d2-0359-4ece-9753-bc0da5dad2ba.png)
+
+
 ### Wireframes
-![page 1 smitten](https://user-images.githubusercontent.com/95313496/155887954-bdab7e8e-5f10-4590-b0d0-8ac2d226dbf8.jpg)
-![page2 smitten](https://user-images.githubusercontent.com/95313496/155887970-e389c4d2-d79c-4535-b40e-6bc74ce80b47.jpg)
-![page 3 smitten](https://user-images.githubusercontent.com/95313496/155887976-252b5596-04db-4d42-8c01-ed02d46c4fd1.jpg)
-![page 4 smitten](https://user-images.githubusercontent.com/95313496/155887980-cff7d907-51cb-42b8-8457-07b4303c5558.jpg)
+![game](wireframes/smitten.png)
+![developers](wireframes/developers.png)
+
 All wireframes were created with Balsamiq wireframing software and can be viewed entirely in this document.
 
 ## Technologies Used
 
 - [Google Fonts](https://fonts.google.com/)
 - [Bootstrap 5](https://getbootstrap.com/docs/5.1/)
-- [Git]
-- [gitpod]
-- [gitpages]
+
 - 
 ### Languages Used
 
@@ -70,14 +78,28 @@ All wireframes were created with Balsamiq wireframing software and can be viewed
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
+HTML was used for the website/app and allows the game to to be viewed.
+CSS and bootsrap to style the html and javascript.
+Javascript was used to create the logic for the game.
+
 ### Libraries and Programs Used
+- rapid api(https://rapidapi.com/ajith/api/love-calculator/details)
+
+rapid api was used for the logic for the game allow us to match the two peoples names.
+
 
 ## Deployment
-The site was deployed to GitHub pages. The steps to deploy are as follows:
-In the GitHub repository, navigate to the Settings tab
-From the source section drop-down menu, select the Master Branch
-Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-The live link can be found here: [Smitten](https://alissatroiano.github.io/8-your-heart-out/index.html)
+
+**Continuous Deployment** practices via [GitHub Pages](https://pages.github.com/) has been implemented for this project. 
+
+[Smitten](https://alissatroiano.github.io/8-your-heart-out/index.html) was deployed to its' live production server during the early stages of development, and any changes to the codebase were tested and validated before going live.
+
+The steps our team took to deploy are listed below:
+
+1. In the GitHub repository, navigate to the Settings tab
+2. From the source section drop-down menu, select the `main` branch
+3. Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+4. The live link can be found here: [Smitten](https://alissatroiano.github.io/8-your-heart-out/index.html)
 
 ## CREDITS
 
@@ -88,6 +110,8 @@ The live link can be found here: [Smitten](https://alissatroiano.github.io/8-you
 - [Rapid API](https://rapidapi.com/) was used to find the **matchmaking API** for the game.
 
 - Deployment description comes from [Code Institute](https://github.com/Code-Institute-Solutions/readme-template)
+
+- [GitHub Pages](https://pages.github.com/) was used to deploy the project.
 
 ## ACKNOWLEDGEMENTS
 
