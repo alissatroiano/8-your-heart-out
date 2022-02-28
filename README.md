@@ -76,7 +76,7 @@ A Bootstrap modal with directions about how to play the game.
 
 #### 404 Error Page
 
-A custom 404 Error Page has also been created for this project to ally with web development best practices.
+A custom 404 Error Page has also been created for this project to ally with web development best practices. Check out the [404 Error Page](https://alissatroiano.github.io/8-your-heart-out/404.html)
 
 ![404 Error Page](wireframes/404.png)
 
