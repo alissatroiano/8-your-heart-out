@@ -21,7 +21,7 @@ const messageText = document.querySelector('.message-container')
 const nameButton = document.getElementById('nameButton')
 
 
-// const word = ['LOVER']
+// const word = ['DROOL']
 let	isGameOver = false
 
 
@@ -45,15 +45,18 @@ async function getShuffledWord() {
 
 let word = getShuffledWord();
 
+// word = 'DROOL'
+// console.log("i am work  ", word)
 
+
+// Keys for keyboard
 const keys = [
 	'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P',
 	'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L',
 	'Z', '<<', 'X', 'C', 'V', 'B', 'N', 'M', 'Enter'
 ]
 
-// console.log(keys[27])
-
+// Arrays for letter input
 const guessRows = [
 	['', '', '', '', ''],
 	['', '', '', '', ''],
@@ -63,6 +66,7 @@ const guessRows = [
 	['', '', '', '', '']
 ]
 
+// Variables for row and tile of above guessRows (Letter input)
 let thisRow = 0
 let thisTile = 0
 
@@ -87,6 +91,7 @@ keys.forEach(key => {
 	keyboard.append(buttonElement)
 });
 
+// Clicks that handle special keys, enter and backspace
 const handleClick = (letter) => {
 	if (letter === 'Enter') {
 		checkTile()
@@ -111,6 +116,7 @@ const guessLetter = (letter) => {
 	}
 }
 
+// Delete function from game keyboard
 const deleteTile = () => {
 	// Prevents backspace from functioning when game is over -- RE
 	if (isGameOver) {
@@ -133,31 +139,37 @@ function colorKeyboard(guessedWord) {
 	function addColor(item, index) {
 		for (i=0; i < wordArray.length; i++){
 
-			console.log(item)
-			console.log(wordArray[i])
+			// console.log(item)
+			// console.log(wordArray[i])
 			// console.log(typeof(index))
-			console.log((index))
-			console.log("")
-			console.log("")
+			// console.log((index))
+			// console.log("")
+			// if (document.getElementById(item).style.backgroundColor != "rgb(250, 250, 250)"){
+			// 	console.log("NOT RED")
+			// }
+			// console.log(document.getElementById(item).style.backgroundColor)
+			// console.log("")
 			console.log("")
 
 			if (item == wordArray[i] && index == i) {
 				// console.log(item, " I am correct11--------------------------------")
 				// console.log(wordArray[i], " I am correct11--------------------------------")
 				document.getElementById(item).style.backgroundColor = "rgb(202, 22, 94)";
+				document.getElementById(item).style.color = "rgb(250, 250, 250)";
 				return
 			} else if(item == wordArray[i] && document.getElementById(item).style.backgroundColor != "rgb(202, 22, 94)" ) {
 				// console.log(item, " I am partial>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 				// console.log(wordArray[i], " I am partial>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 				document.getElementById(item).style.backgroundColor = "rgb(255, 173, 187)";
 				return
-			} else if (document.getElementById(item).style.backgroundColor != "rgb(202, 22, 94)" || document.getElementById(item).style.backgroundColor != "rgb(255, 173, 187)") {
+			// } else if (document.getElementById(item).style.backgroundColor != "rgb(202, 22, 94)" || document.getElementById(item).style.backgroundColor != "rgb(255, 173, 187)") {
+			} else if (document.getElementById(item).style.backgroundColor == "") {
 				// console.log(item, " end of array")
 				// console.log(i, " end of array")
 				document.getElementById(item).style.backgroundColor = "rgb(128, 110, 112)";
 			}
 		}
-		console.log(item)
+		// console.log(item)
 		// console.log(wordArray)
 	}
 }
@@ -190,7 +202,7 @@ const checkTile = () => {
 
 			displayMessage("Brilliant!")
 
-			displayMessage('Brilliant!')
+			// displayMessage('Brilliant!')
 
 			isGameOver = true
 			return
@@ -206,7 +218,7 @@ const checkTile = () => {
 				displayMessage("Try Again!")
 				thisRow++
 				thisTile = 0
-			} 
+			}
 		}
 	}
 }
@@ -243,3 +255,9 @@ const addColor = () => {
 		}
 	})
 }
+
+
+// Restart
+document.getElementById("restartGame").addEventListener("click", function() {
+	location.reload()
+});
