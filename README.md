@@ -14,9 +14,9 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
     - [Features](#features)
       - [Navigation bar](#navigation-bar)
       - [Smitten: The game itself. Game](#smitten-the-game-itself-game)
-      - [Footer](#footer)
       - [Developers:](#developers)
       - [Directions:](#directions)
+      - [404 Error Page](#404-error-page)
     - [Strategy Table](#strategy-table)
     - [Colour Theory](#colour-theory)
   - [Wireframes](#wireframes)
@@ -58,11 +58,6 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
 
 ![Game](wireframes/game.png)
 
-#### Footer
-
-- The footer section includes an all rights reserved and the name of the developers group, 8-your-heart-out.
-- The footer will be shown throughout all pages to maintain uniformity.
-
 #### Developers: 
 
 - The page that shows the developers of the game and their contact information. [Developer Page](https://alissatroiano.github.io/8-your-heart-out/developer-page.html)
@@ -78,6 +73,12 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
 A Bootstrap modal with directions about how to play the game.
 
 ![Modal](wireframes/modal.png)
+
+#### 404 Error Page
+
+A custom 404 Error Page has also been created for this project to ally with web development best practices.
+
+![404 Error Page](wireframes/404.png)
 
 ### Strategy Table
 
