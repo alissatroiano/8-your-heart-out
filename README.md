@@ -13,7 +13,7 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
   - [UX](#ux)
     - [Features](#features)
     - [strategy-table](#strategy-table)
-    - [colour theary](#colour-theary)
+    - [colour theory](#colour-theory)
     - [Wireframes](#wireframes)
   - [Technologies Used](#technologies-used)
   - [Testing](#testing)
@@ -63,8 +63,7 @@ Developers: The page that shows the developers of the game and their contact inf
 
 ![tradeoff.png](wireframes/tradeoff.png)
 
-### colour theary
-
+### colour theory 
 The classic colors related to love and Valentine's Day are red and white. Red represents deep passion and respect for your loved ones, and invites us to action, motivates us, this color represents a perfect match for Valentine's Day. White stands for a new beginning. If you blend the two colors, you get the pink color that represents playfulness and that is the color of first love. And to represent detached and neutral emotions is gray.
 
 Therefore, these colors have been implemented in the game Smitten. Representing a true match for the letter in the hidden word and in the correct spot, is the color: red rose; getting the correct letter, but not in the right spot is represented by the light-pink; the silver-pink shows that we don't have a match, it isn't in the hidden word or in the right spot. Finally, porcelain color is a new opportunity to know whether you get a match or not.
@@ -88,7 +87,7 @@ This project makes use of the following languages, frameworks, and libraries:
   
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-- [Git](https://git-scm.com/doc)
+- [Git]s(https://git-scm.com/doc)
   
 - [GitHub Pages](https://pages.github.com/)
 
@@ -212,8 +211,6 @@ The live link to our deployed project can be found here: [Smitten](https://aliss
 - The **JavaScript logic** that makes Smitten work like a [Wordle](https://www.nytimes.com/games/wordle/index.html) game was learned from [Ani Kubow's YouTube video](https://www.youtube.com/watch?v=mpby4HiElek) and altered for this project by the development team.
 
 - The fonts in the site were copied from [Google Fonts](https://fonts.google.com/)
-  
-- [Rapid API](https://rapidapi.com/) was used to find the **matchmaking API** for the game.
 
 - Deployment description comes from [Code Institute](https://github.com/Code-Institute-Solutions/readme-template)
 
