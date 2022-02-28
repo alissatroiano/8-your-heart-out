@@ -1,11 +1,10 @@
 # Smitten
 
-Smitten is an online game for Valentine's Day inspired by the famous "Wordle Game". The game is built for anyone who likes word games, and want to test their knowledge in love.
+[Smitten](https://alissatroiano.github.io/8-your-heart-out/index.html) is an online word game related to love and Valentine's Day. Smitten was inspired by the trending "Wordle Game". The game is built for anyone who likes word games, and want to test their knowledge in love.
 
 The rules are simple: The player must guess the hidden word of 5 characters in 6 tries. First of all, type any love word on the first line and see if there's a match. You will get a match and the tile will turn red if the letter is guessed correctly and is in the right spot. If the letter is in the word, but in the wrong position, will become pink.  And the tile will become silver if the letter doesn't match the place and isn't in the word.
 
 ![Responsive View](wireframes/responsive.png)
-
 
 ## Table of Contents
 
@@ -19,9 +18,10 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Libraries and Programs Used](#libraries-and-programs-used)
-    - [Deployment](#deployment)
+  - [Deployment](#deployment)
   - [CREDITS](#credits)
   - [ACKNOWLEDGEMENTS](#acknowledgements)
+ 
 
 ## UX
 
@@ -30,20 +30,9 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
 Navigation bar
 - The navigation bar is present on all three pages to maintain uniformity.
 - The navigation bar is fully responsive. 
-- It includes the logo, the love calculater page, the game page and the developer page. 
-- Directions: A Bootstrap modal with text content about how to play, so users understand how to play the game.
-  This is only present on the game page.
+- It includes the logo, the game page and the developer page. 
+- On the game page only you can find Directions: A Bootstrap modal with text content about how to play, so users understand how   to play the game.
 - It's easy to navigate on every page, there is no need to use the 'back' button. 
-
-Home: The home page of the game. [Home](https://alissatroiano.github.io/8-your-heart-out/)
-- The landing page has a big welcome message that directly draws attention. 
-- Right underneath is the love calculator visible. 
-- It has two containers where the names of two people are entered. And a submit button. 
-- After Solving the word puzzle it reveals how romantically compatible they are using the Love Calculator API! 
-
-Footer
-- The footer section includes an all rights reserved and the name of the developers group, 8-your-heart-out. 
-- The footer will be shown throughout all pages to maintain uniformity. 
 
 Smitten: The game itself. [Game](https://alissatroiano.github.io/8-your-heart-out/)
 - The game page contains the actual game. 
@@ -51,6 +40,10 @@ Smitten: The game itself. [Game](https://alissatroiano.github.io/8-your-heart-ou
   of letters for the word that needs to be guessed. 
 - The 6 rows make it clear a person has only 6 guesses to find the correct word.
 - Right underneath it, is the keyboard which is used to fill in the letters, it's easy to use because it represents a regular keyboard.
+
+Footer
+- The footer section includes an all rights reserved and the name of the developers group, 8-your-heart-out. 
+- The footer will be shown throughout all pages to maintain uniformity. 
 
 Developers: The page that shows the developers of the game and their contact information. [Developer Page](https://alissatroiano.github.io/8-your-heart-out/developer-page.html)
 - The developer page contains 6 cards with each a photo and information about the collaborators on this project.
@@ -95,12 +88,22 @@ Javascript was used to create the logic for the game.
 rapid api was used for the logic for the game allow us to match the two peoples names.
 
 
-### Deployment
-The site was deployed to GitHub pages. The steps to deploy are as follows:
-In the GitHub repository, navigate to the Settings tab
-From the source section drop-down menu, select the Master Branch
-Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-The live link can be found here: [title](https://www.example.com)
+## Deployment
+
+**Continuous Deployment** practices via [GitHub Pages](https://pages.github.com/) has been implemented for this project. 
+
+[Smitten](https://alissatroiano.github.io/8-your-heart-out/index.html) was deployed to its' live production server during the early stages of development, and any changes to the codebase were tested and validated before being pushed to the production server.
+
+The steps our team took to deploy are listed below:
+
+1. In the GitHub repository, navigate to the Settings tab
+2. From the source section drop-down menu, select the `main` branch
+3. Once the `main` branch has been selected, click "Save"
+4. GitHub will display a message confirming that the site has been deployed successfully
+5. GitHub will provide a link to the deployed site
+6. Click on the link to view the site has deployed in a new tab
+
+The live link to our deployed project can be found here: [Smitten](https://alissatroiano.github.io/8-your-heart-out/index.html)
 
 ## CREDITS
 
@@ -111,6 +114,8 @@ The live link can be found here: [title](https://www.example.com)
 - [Rapid API](https://rapidapi.com/) was used to find the **matchmaking API** for the game.
 
 - Deployment description comes from [Code Institute](https://github.com/Code-Institute-Solutions/readme-template)
+
+- [GitHub Pages](https://pages.github.com/) was used to deploy the project.
 
 ## ACKNOWLEDGEMENTS
 
