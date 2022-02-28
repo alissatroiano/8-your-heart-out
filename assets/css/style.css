@@ -8,6 +8,13 @@
 	--silver-pink: rgb(190, 163, 167);
 }
 
+::selection {
+	background-color: rgb(255, 192, 203);
+}
+
+::-moz-selection {
+	background-color: rgb(255, 192, 203);
+}
 
 /* -------------------- General */
 * {
@@ -371,28 +378,24 @@ h5#staticBackdropLabel {
 	margin-bottom: 0!important;	
 }
 
-span#bold {
+span.bold {
 	font-weight: 700;
 	color: rgb(202, 22, 94);
 	font-family: 'Futura-PT', sans-serif;
 }
 
-span#justbold {
+span.justbold {
 	font-weight: 700;
 }
 
-p#modal-body {
-	text-align: left;
-}
-
-p#modal-body {
+p.modal-text {
 	font-family: 'Futura-PT', sans-serif;
 	text-align: center;
 	font-size: 1.2rem;
 
 }
 
-p#modal-examples {
+p.modal-examples {
 	font-size: 1.2rem;
 }
 
@@ -416,7 +419,6 @@ p#modal-examples {
 	background-color: rgb(202, 22, 94);
 	color: #fafafa;
 }
-
 
 /* -------------------- Developer Page */
 .developer-container {
