@@ -74,28 +74,7 @@ All wireframes were created with Balsamiq wireframing software and can be viewed
 
 ## Technologies Used
 
-- [Google Fonts](https://fonts.google.com/)
-- [Bootstrap 5](https://getbootstrap.com/docs/5.1/)
-
--
-
-### Languages Used
-
-- [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
-- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-
-HTML was used for the website/app and allows the game to to be viewed.
-CSS and bootsrap to style the html and javascript.
-Javascript was used to create the logic for the game.
-
-### Libraries and Programs Used
-
-- rapid api(<https://rapidapi.com/ajith/api/love-calculator/details>)
-
-rapid api was used for the logic for the game allow us to match the two peoples names.
-
-## Tools
+### Tools
 
 - [W3c Validator](https://validator.w3.org/)
 - [Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
@@ -107,6 +86,22 @@ rapid api was used for the logic for the game allow us to match the two peoples 
 - [Google Fonts](https://fonts.google.com/)
 - [Coolors](https://coolors.co/)
 - [Toolness](https://toolness.github.io/accessible-color-matrix/)
+
+### Languages Used
+
+- [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+HTML was used for the website/app and allows the game to be viewed.
+CSS and bootsrap to style the html and javascript.
+Javascript was used to create the logic for the game.
+
+### Libraries and Programs Used
+
+- rapid api(<https://rapidapi.com/ajith/api/love-calculator/details>)
+
+rapid api was used for the logic for the game allow us to match the two peoples names.
 
 ## Deployment
 
