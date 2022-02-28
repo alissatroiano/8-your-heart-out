@@ -110,7 +110,6 @@ const deleteTile = () => {
 
 // Add color to keyboard
 function colorKeyboard(guessedWord) {
-	console.log(guessedWord);
 	let wordArray = word.split("");
 	guessedWord.split("").forEach(addColor);
 	function addColor(item, index) {
@@ -136,18 +135,14 @@ function colorKeyboard(guessedWord) {
 const checkTile = () => {
 	const guess = guessRows[thisRow].join('');
 
-	// console.log(guessRows[thisRow], 'I am new')
-
 	// Breaks check before it processes as guess -- RE
 	if (guessRows[thisRow].join('').length != 5) {
-		// console.log("row NOT full on enter click")
 		return;
 	}
 
 	if (thisTile === 5) {
 		colorKeyboard(guess);
 		addColor();
-		console.log('you guessed ' + guess + '...and the word was ' + word);
 		if (word == guess) {
 			displayMessage("Brilliant!");
 			isGameOver = true;
