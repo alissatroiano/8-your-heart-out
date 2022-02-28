@@ -4,7 +4,7 @@ Smitten is an online game for Valentine's Day inspired by the famous "Wordle Gam
 
 The rules are simple: The player must guess the hidden word of 5 characters in 6 tries. First of all, type any love word on the first line and see if there's a match. You will get a match and the tile will turn red if the letter is guessed correctly and is in the right spot. If the letter is in the word, but in the wrong position, will become pink.  And the tile will become silver if the letter doesn't match the place and isn't in the word.
 
-![Screenshot 2022-02-27 153350](https://user-images.githubusercontent.com/95313496/155888973-51f761de-c3d8-45b2-90ad-8be4d5be0ee8.jpg)
+![Responsive View](wireframes/responsive.png)
 
 
 ## Table of Contents
@@ -13,14 +13,15 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
   - [Table of Contents](#table-of-contents)
   - [UX](#ux)
     - [Features](#features)
-    - [User Stories](#user-stories)
+    - [strategy-table](#strategy-table)
+    - [colour theary](#colour-theary)
     - [Wireframes](#wireframes)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Libraries and Programs Used](#libraries-and-programs-used)
+    - [Deployment](#deployment)
   - [CREDITS](#credits)
   - [ACKNOWLEDGEMENTS](#acknowledgements)
-  - [Deployment](#deployment)
 
 ## UX
 
@@ -67,10 +68,10 @@ Therefore, these colors have been implemented in the game Smitten. Representing 
 
 
 ### Wireframes
-![page 1 smitten](https://user-images.githubusercontent.com/95313496/155887954-bdab7e8e-5f10-4590-b0d0-8ac2d226dbf8.jpg)
-![page2 smitten](https://user-images.githubusercontent.com/95313496/155887970-e389c4d2-d79c-4535-b40e-6bc74ce80b47.jpg)
-![page 3 smitten](https://user-images.githubusercontent.com/95313496/155887976-252b5596-04db-4d42-8c01-ed02d46c4fd1.jpg)
-![page 4 smitten](https://user-images.githubusercontent.com/95313496/155887980-cff7d907-51cb-42b8-8457-07b4303c5558.jpg)
+![landing](wireframes/page1.png)
+![game](wireframes/smitten.png)
+![developers](wireframes/developers.png)
+
 All wireframes were created with Balsamiq wireframing software and can be viewed entirely in this document.
 
 ## Technologies Used
