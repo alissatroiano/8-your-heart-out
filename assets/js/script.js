@@ -121,7 +121,6 @@ function colorKeyboard(guessedWord) {
 				return;
 			} else if(item == wordArray[wordIndex] && findBackgroundColor != "rgb(202, 22, 94)" ) {
 				document.getElementById(item).style.backgroundColor = "rgb(255, 173, 187)";
-				return;
 			} else if (findBackgroundColor == "") {
 				document.getElementById(item).style.backgroundColor = "rgb(128, 110, 112)";
 			}
