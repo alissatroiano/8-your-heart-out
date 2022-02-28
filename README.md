@@ -68,7 +68,6 @@ Therefore, these colors have been implemented in the game Smitten. Representing 
 
 
 ### Wireframes
-![landing](wireframes/page1.png)
 ![game](wireframes/smitten.png)
 ![developers](wireframes/developers.png)
 

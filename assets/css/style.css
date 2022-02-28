@@ -290,7 +290,7 @@ body {
 }
 
 .key-container button {
-	width: 43px;
+	min-width: 43px;
 	height: 58px;
 	border-radius: 4px;
 	border: none;
@@ -300,9 +300,13 @@ body {
 	margin: 4px;
 }
 
-.key-container button:nth-child(21),
+.key-container button:nth-child(11) {
+	margin-left: 30px;
+}
+
+.key-container button:nth-child(20),
 .key-container button:nth-child(28) {
-	width: 80px;
+	width: 68px;
 	height: 58px;
 	border-radius: 10%;
 }
