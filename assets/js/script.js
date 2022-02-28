@@ -3,10 +3,7 @@
 const tileDisplay = document.querySelector('.tile-container');
 const keyboard = document.querySelector('.key-container');
 const messageText = document.querySelector('.message-container');
-//const nameButton = document.getElementById('nameButton');
 
-
-// const word = ['DROOL']
 let	isGameOver = false;
 
 async function getRandomWord() {
@@ -23,15 +20,10 @@ async function getShuffledWord() {
 	const counter = data.length;
 	const index = Math.floor(Math.random() * counter);
 	word = data[index].toUpperCase();
-	// console.log(word)
 	return word;
 }
 
 let word = getShuffledWord();
-
-// word = 'DROOL'
-// console.log("i am work  ", word)
-
 
 // Keys for keyboard
 const keys = [
@@ -142,18 +134,14 @@ function colorKeyboard(guessedWord) {
 const checkTile = () => {
 	const guess = guessRows[thisRow].join('');
 
-	// console.log(guessRows[thisRow], 'I am new')
-
 	// Breaks check before it processes as guess -- RE
 	if (guessRows[thisRow].join('').length != 5) {
-		// console.log("row NOT full on enter click")
 		return;
 	}
 
 	if (thisTile === 5) {
 		colorKeyboard(guess);
 		addColor();
-		console.log('you guessed ' + guess + '...and the word was ' + word);
 		if (word == guess) {
 			displayMessage("Brilliant!");
 			isGameOver = true;
@@ -203,9 +191,3 @@ const addColor = () => {
 		}
 	});
 };
-
-
-// Restart
-// document.getElementById("restartGame").addEventListener("click", function() {
-// 	location.reload()
-// });
