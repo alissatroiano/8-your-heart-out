@@ -49,7 +49,7 @@ body {
 .container-fluid {
 	padding: 0 1em;
 	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	max-width: 100vw;
 	line-height: 3.2em;
 }
@@ -528,6 +528,10 @@ strong {
 }
 /*For mobile screens*/
 @media (max-width: 991px) {
+
+	.container-fluid {
+		margin-bottom: 0.8em;
+	}
 	.tile-container {
 		transform: scale(.9);
 		margin-bottom: 1px;
@@ -565,6 +569,9 @@ strong {
 		margin-bottom: 0;
 	}
 
+	.text-center > h1 {
+		font-size: 1.65rem;
+	}
 	.text-end,
 	.question {
 		transform: scale(.7);

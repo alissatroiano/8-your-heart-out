@@ -12,8 +12,8 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
   - [Table of Contents](#table-of-contents)
   - [UX](#ux)
     - [Features](#features)
-    - [Trade Off Exercise](#trade-off-exercise)
-    - [colour theary](#colour-theary)
+    - [strategy-table](#strategy-table)
+    - [colour theory](#colour-theory)
     - [Wireframes](#wireframes)
   - [Technologies Used](#technologies-used)
   - [Testing](#testing)
@@ -28,48 +28,50 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
   - [Deployment](#deployment)
   - [CREDITS](#credits)
   - [ACKNOWLEDGEMENTS](#acknowledgements)
- 
 
 ## UX
 
 ### Features
 
 Navigation bar
+
 - The navigation bar is present on all three pages to maintain uniformity.
-- The navigation bar is fully responsive. 
-- It includes the logo, the game page and the developer page. 
+- The navigation bar is fully responsive.
+- It includes the logo, the game page and the developer page.
 - On the game page only you can find Directions: A Bootstrap modal with text content about how to play, so users understand how   to play the game.
-- It's easy to navigate on every page, there is no need to use the 'back' button. 
+- It's easy to navigate on every page, there is no need to use the 'back' button.
 
 Smitten: The game itself. [Game](https://alissatroiano.github.io/8-your-heart-out/)
-- The game page contains the actual game. 
+
+- The game page contains the actual game.
 - It's represented by a container with six rows of five fields each for the amount
-  of letters for the word that needs to be guessed. 
+  of letters for the word that needs to be guessed.
 - The 6 rows make it clear a person has only 6 guesses to find the correct word.
 - Right underneath it, is the keyboard which is used to fill in the letters, it's easy to use because it represents a regular keyboard.
 
 Footer
-- The footer section includes an all rights reserved and the name of the developers group, 8-your-heart-out. 
-- The footer will be shown throughout all pages to maintain uniformity. 
+
+- The footer section includes an all rights reserved and the name of the developers group, 8-your-heart-out.
+- The footer will be shown throughout all pages to maintain uniformity.
 
 Developers: The page that shows the developers of the game and their contact information. [Developer Page](https://alissatroiano.github.io/8-your-heart-out/developer-page.html)
+
 - The developer page contains 6 cards with each a photo and information about the collaborators on this project.
-- At the bottom of each card are links presented to both Github and Linkedin for easy connection. 
+- At the bottom of each card are links presented to both Github and Linkedin for easy connection.
 
-### Trade Off Exercise
-
+### strategy-table
 
 ![tradeoff.png](wireframes/tradeoff.png)
 
-### colour theary 
+### colour theory 
 The classic colors related to love and Valentine's Day are red and white. Red represents deep passion and respect for your loved ones, and invites us to action, motivates us, this color represents a perfect match for Valentine's Day. White stands for a new beginning. If you blend the two colors, you get the pink color that represents playfulness and that is the color of first love. And to represent detached and neutral emotions is gray.
- 
-Therefore, these colors have been implemented in the game Smitten. Representing a true match for the letter in the hidden word and in the correct spot, is the color: red rose; getting the correct letter, but not in the right spot is represented by the light-pink; the silver-pink shows that we don't have a match, it isn't in the hidden word or in the right spot. Finally, porcelain color is a new opportunity to know whether you get a match or not. 
+
+Therefore, these colors have been implemented in the game Smitten. Representing a true match for the letter in the hidden word and in the correct spot, is the color: red rose; getting the correct letter, but not in the right spot is represented by the light-pink; the silver-pink shows that we don't have a match, it isn't in the hidden word or in the right spot. Finally, porcelain color is a new opportunity to know whether you get a match or not.
 
 ![Picture1](https://user-images.githubusercontent.com/95313496/155903778-58a8a2d2-0359-4ece-9753-bc0da5dad2ba.png)
 
-
 ### Wireframes
+
 ![game](wireframes/smitten.png)
 ![developers](wireframes/developers.png)
 
@@ -85,7 +87,7 @@ This project makes use of the following languages, frameworks, and libraries:
   
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-- [Git](https://git-scm.com/doc)
+- [Git]s(https://git-scm.com/doc)
   
 - [GitHub Pages](https://pages.github.com/)
 
@@ -107,6 +109,9 @@ This project makes use of the following languages, frameworks, and libraries:
 
 - [jQuery](https://api.jquery.com/)
 
+- [Gitpod](https://www.gitpod.io/)
+
+- [Visual Studio Code](https://code.visualstudio.com/)
 ## Testing
 
 The following tests have been conducted by the [development team](https://github.com/alissatroiano/8-your-heart-out). Each test described below was accompanied by the actions taken to ensure the tests passed.
@@ -186,7 +191,7 @@ The following tests have been conducted by the [development team](https://github
   8. Mark test passed.
 ## Deployment
 
-**Continuous Deployment** practices via [GitHub Pages](https://pages.github.com/) has been implemented for this project. 
+**Continuous Deployment** practices via [GitHub Pages](https://pages.github.com/) has been implemented for this project.
 
 [Smitten](https://alissatroiano.github.io/8-your-heart-out/index.html) was deployed to its' live production server during the early stages of development, and any changes to the codebase were tested and validated before being pushed to the production server.
 
@@ -206,14 +211,14 @@ The live link to our deployed project can be found here: [Smitten](https://aliss
 - The **JavaScript logic** that makes Smitten work like a [Wordle](https://www.nytimes.com/games/wordle/index.html) game was learned from [Ani Kubow's YouTube video](https://www.youtube.com/watch?v=mpby4HiElek) and altered for this project by the development team.
 
 - The fonts in the site were copied from [Google Fonts](https://fonts.google.com/)
-  
-- [Rapid API](https://rapidapi.com/) was used to find the **matchmaking API** for the game.
 
 - Deployment description comes from [Code Institute](https://github.com/Code-Institute-Solutions/readme-template)
 
 - [GitHub Pages](https://pages.github.com/) was used to deploy the project.
 
-- - [Git](https://git-scm.com/doc) - was used for version control
+- [Git](https://git-scm.com/doc) - was used for version control
+
+- The template for the 404 Error page was copied from [Colorlib](https://colorlib.com/wp/free-404-error-page-templates/).
 
 ## ACKNOWLEDGEMENTS
 
