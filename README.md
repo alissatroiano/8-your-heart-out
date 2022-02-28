@@ -12,9 +12,14 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
   - [Table of Contents](#table-of-contents)
   - [UX](#ux)
     - [Features](#features)
-    - [strategy-table](#strategy-table)
-    - [colour theory](#colour-theory)
-    - [Wireframes](#wireframes)
+      - [Navigation bar](#navigation-bar)
+      - [Smitten: The game itself. Game](#smitten-the-game-itself-game)
+      - [Footer](#footer)
+      - [Developers:](#developers)
+      - [Directions:](#directions)
+    - [Strategy Table](#strategy-table)
+    - [Colour Theory](#colour-theory)
+  - [Wireframes](#wireframes)
   - [Technologies Used](#technologies-used)
   - [Testing](#testing)
     - [Navigation:](#navigation)
@@ -33,7 +38,7 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
 
 ### Features
 
-Navigation bar
+#### Navigation bar
 
 - The navigation bar is present on all three pages to maintain uniformity.
 - The navigation bar is fully responsive.
@@ -41,7 +46,9 @@ Navigation bar
 - On the game page only you can find Directions: A Bootstrap modal with text content about how to play, so users understand how   to play the game.
 - It's easy to navigate on every page, there is no need to use the 'back' button.
 
-Smitten: The game itself. [Game](https://alissatroiano.github.io/8-your-heart-out/)
+![Navigation](wireframes/navigation.png)
+
+#### Smitten: The game itself. [Game](https://alissatroiano.github.io/8-your-heart-out/)
 
 - The game page contains the actual game.
 - It's represented by a container with six rows of five fields each for the amount
@@ -49,28 +56,44 @@ Smitten: The game itself. [Game](https://alissatroiano.github.io/8-your-heart-ou
 - The 6 rows make it clear a person has only 6 guesses to find the correct word.
 - Right underneath it, is the keyboard which is used to fill in the letters, it's easy to use because it represents a regular keyboard.
 
-Footer
+![Game](wireframes/game.png)
+
+#### Footer
 
 - The footer section includes an all rights reserved and the name of the developers group, 8-your-heart-out.
 - The footer will be shown throughout all pages to maintain uniformity.
 
-Developers: The page that shows the developers of the game and their contact information. [Developer Page](https://alissatroiano.github.io/8-your-heart-out/developer-page.html)
+#### Developers: 
+
+- The page that shows the developers of the game and their contact information. [Developer Page](https://alissatroiano.github.io/8-your-heart-out/developer-page.html)
 
 - The developer page contains 6 cards with each a photo and information about the collaborators on this project.
+  
 - At the bottom of each card are links presented to both Github and Linkedin for easy connection.
 
-### strategy-table
+![Dev](wireframes/developer.png)
+
+#### Directions: 
+
+A Bootstrap modal with directions about how to play the game.
+
+![Modal](wireframes/modal.png)
+
+### Strategy Table
 
 ![tradeoff.png](wireframes/tradeoff.png)
 
-### colour theory 
+### Colour Theory
+
 The classic colors related to love and Valentine's Day are red and white. Red represents deep passion and respect for your loved ones, and invites us to action, motivates us, this color represents a perfect match for Valentine's Day. White stands for a new beginning. If you blend the two colors, you get the pink color that represents playfulness and that is the color of first love. And to represent detached and neutral emotions is gray.
 
 Therefore, these colors have been implemented in the game Smitten. Representing a true match for the letter in the hidden word and in the correct spot, is the color: red rose; getting the correct letter, but not in the right spot is represented by the light-pink; the silver-pink shows that we don't have a match, it isn't in the hidden word or in the right spot. Finally, porcelain color is a new opportunity to know whether you get a match or not.
 
+![color palette](wireframes/colorpalette.png)
+
 ![Picture1](https://user-images.githubusercontent.com/95313496/155903778-58a8a2d2-0359-4ece-9753-bc0da5dad2ba.png)
 
-### Wireframes
+## Wireframes
 
 ![game](wireframes/smitten.png)
 ![developers](wireframes/developers.png)
