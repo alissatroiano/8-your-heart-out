@@ -9,7 +9,6 @@ const messageText = document.querySelector('.message-container');
 // const word = ['DROOL']
 let	isGameOver = false;
 
-
 async function getRandomWord() {
     let url = 'words.json';
     try {
@@ -157,7 +156,6 @@ const checkTile = () => {
 		console.log('you guessed ' + guess + '...and the word was ' + word);
 		if (word == guess) {
 			displayMessage("Brilliant!");
-			// displayMessage('Brilliant!')
 			isGameOver = true;
 			return;
 
@@ -182,9 +180,6 @@ const displayMessage = (message) => {
 	const messageElement = document.createElement('p');
 	messageElement.textContent = message;
 
-	//console.log(typeof (messageText.lastChild))
-	//console.log(messageText)
-
 	// remove repeat iterations of 'try again' -- RE
 	if (messageText.children[0]) {
 		messageText.children[0].remove();
@@ -198,7 +193,6 @@ const addColor = () => {
 	const rowTiles = document.querySelector('.guessRow-' + thisRow).childNodes
 	rowTiles.forEach((tile, index) => {
 		const tileLetter = tile.getAttribute('data');
-
 		if (tileLetter === word[index]) {
 			tile.style.backgroundColor = '#ca165e';
 			tile.style.color = '#fff';
