@@ -125,6 +125,44 @@ const deleteTile = () => {
 	}
 }
 
+// Add color to keyboard
+function colorKeyboard(guessedWord) {
+	console.log(guessedWord)
+	let wordArray = word.split("")
+	guessedWord.split("").forEach(addColor);
+	function addColor(item, index) {
+		for (i=0; i < wordArray.length; i++){
+
+			console.log(item)
+			console.log(wordArray[i])
+			// console.log(typeof(index))
+			console.log((index))
+			console.log("")
+			console.log("")
+			console.log("")
+
+			if (item == wordArray[i] && index == i) {
+				// console.log(item, " I am correct11--------------------------------")
+				// console.log(wordArray[i], " I am correct11--------------------------------")
+				document.getElementById(item).style.backgroundColor = "rgb(202, 22, 94)";
+				return
+			} else if(item == wordArray[i] && document.getElementById(item).style.backgroundColor != "rgb(202, 22, 94)" ) {
+				// console.log(item, " I am partial>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+				// console.log(wordArray[i], " I am partial>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+				document.getElementById(item).style.backgroundColor = "rgb(255, 173, 187)";
+				return
+			} else if (document.getElementById(item).style.backgroundColor != "rgb(202, 22, 94)" || document.getElementById(item).style.backgroundColor != "rgb(255, 173, 187)") {
+				// console.log(item, " end of array")
+				// console.log(i, " end of array")
+				document.getElementById(item).style.backgroundColor = "rgb(128, 110, 112)";
+			}
+		}
+		console.log(item)
+		// console.log(wordArray)
+	}
+}
+
+
 
 // 	A function to check if the user's guess is correct
 const checkTile = () => {
@@ -134,17 +172,18 @@ const checkTile = () => {
 
 	// Breaks check before it processes as guess -- RE
 	if (guessRows[thisRow].join('').length != 5) {
-		console.log("row NOT full on enter click")
+		// console.log("row NOT full on enter click")
 		return
 	}
 
 	// Console log block for determining correctness of program function -- RE
-	console.log("row FULL on enter click")
+	// console.log("row FULL on enter click")
 	// console.log(thisRow, "i am row")
 	// console.log(guessRows, "i am guess rows")
 	// console.log(guess, "i am guess")
 
 	if (thisTile === 5) {
+		colorKeyboard(guess)
 		addColor()
 		console.log('you guessed ' + guess + '...and the word was ' + word)
 		if (word == guess) {
