@@ -1,6 +1,6 @@
 # Smitten
 
-[Smitten](https://alissatroiano.github.io/8-your-heart-out/index.html) is an online word game related to love and Valentine's Day. Smitten was inspired by the trending "Wordle Game". The game is built for anyone who likes word games, and want to test their knowledge in love.
+[Smitten](https://alissatroiano.github.io/8-your-heart-out/index.html) is an online word game related to love and Valentine's Day. Smitten was inspired by the famous game, [Wordle](https://www.nytimes.com/games/wordle/index.html). The game is built for anyone who likes word games, and want to test their knowledge in love.
 
 The rules are simple: The player must guess the hidden word of 5 characters in 6 tries. First of all, type any love word on the first line and see if there's a match. You will get a match and the tile will turn red if the letter is guessed correctly and is in the right spot. If the letter is in the word, but in the wrong position, will become pink.  And the tile will become silver if the letter doesn't match the place and isn't in the word.
 
@@ -16,8 +16,6 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
     - [colour theary](#colour-theary)
     - [Wireframes](#wireframes)
   - [Technologies Used](#technologies-used)
-    - [Languages Used](#languages-used)
-    - [Libraries and Programs Used](#libraries-and-programs-used)
   - [Deployment](#deployment)
   - [CREDITS](#credits)
   - [ACKNOWLEDGEMENTS](#acknowledgements)
@@ -68,25 +66,35 @@ All wireframes were created with Balsamiq wireframing software and can be viewed
 
 ## Technologies Used
 
-- [Google Fonts](https://fonts.google.com/)
-- [Bootstrap 5](https://getbootstrap.com/docs/5.1/)
-
-- 
-### Languages Used
+This project makes use of the following languages, frameworks, and libraries:
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+  
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-HTML was used for the website/app and allows the game to to be viewed.
-CSS and bootsrap to style the html and javascript.
-Javascript was used to create the logic for the game.
+- [Git](https://git-scm.com/doc)
+  
+- [GitHub Pages](https://pages.github.com/)
 
-### Libraries and Programs Used
-- rapid api(https://rapidapi.com/ajith/api/love-calculator/details)
+- [Google Fonts](https://fonts.google.com/)
 
-rapid api was used for the logic for the game allow us to match the two peoples names.
+- [Bootstrap 5](https://getbootstrap.com/docs/5.1/)
 
+- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
+
+- [GitPod](https://gitpod.io/)
+
+- [Balsamiq](https://balsamiq.com/)
+
+- [W3C Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
+
+- [W3C HTML Validator](https://validator.w3.org/)
+
+- [JS Hint](https://jshint.com/)
+
+- [jQuery](https://api.jquery.com/)
 
 ## Deployment
 
@@ -107,7 +115,7 @@ The live link to our deployed project can be found here: [Smitten](https://aliss
 
 ## CREDITS
 
-- The JavaScript logic for the game was learned from [Ani Kubow's YouTube video](https://www.youtube.com/watch?v=mpby4HiElek) and altered for this project by the development team.
+- The **JavaScript logic** that makes Smitten work like a [Wordle](https://www.nytimes.com/games/wordle/index.html) game was learned from [Ani Kubow's YouTube video](https://www.youtube.com/watch?v=mpby4HiElek) and altered for this project by the development team.
 
 - The fonts in the site were copied from [Google Fonts](https://fonts.google.com/)
   
@@ -117,6 +125,10 @@ The live link to our deployed project can be found here: [Smitten](https://aliss
 
 - [GitHub Pages](https://pages.github.com/) was used to deploy the project.
 
+- - [Git](https://git-scm.com/doc) - was used for version control
+
 ## ACKNOWLEDGEMENTS
 
 - This game was built for [Code Institute's February 2022 'Love is in the Air' Hackathon](https://hackathon.codeinstitute.net/hackathon/public/17/)
+
+- This game was inspired by the newly famous game, [Wordle](https://www.nytimes.com/games/wordle/index.html)
