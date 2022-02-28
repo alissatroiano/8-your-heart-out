@@ -18,11 +18,11 @@ body {
 }
 
 ::selection {
-	background-color: rgb(202, 22, 94);
+	background-color: rgb(255, 192, 203);
 }
 
 ::-moz-selection {
-	background-color: rgb(202, 22, 94);
+	background-color: rgb(255, 192, 203);
 }
 	
 
