@@ -20,6 +20,7 @@ async function getShuffledWord() {
 	const counter = data.length;
 	const index = Math.floor(Math.random() * counter);
 	word = data[index].toUpperCase();
+	console.log(word)
 	return word;
 }
 
