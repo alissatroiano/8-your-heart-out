@@ -179,6 +179,7 @@ body {
 	background-color: var(--dark);
 	color: var(--light-bc);
 	text-align: center;
+	padding-top: 5px;
 }
 
 /* -------------------- Game / Index */
@@ -223,7 +224,6 @@ body {
 }
 
 .mn-container {
-	padding-top: 2em;
 	width: 550px;
 	max-width: 80%;
 	position: relative;
@@ -349,6 +349,70 @@ body {
 .silver-overlay {
 	background-color: rgb(190, 163, 167);
 }
+
+/* -------------------- How To Play Modal */
+
+.modal-header {
+	justify-content: center;
+}
+
+.modal-body {
+	font-size: 1.1rem;
+}
+
+h5#staticBackdropLabel {
+	font-family: 'Merriweather', serif;
+	font-weight: 900;
+	font-size: 3rem;
+	margin-bottom: 0!important;	
+}
+
+span#bold {
+	font-weight: 700;
+	color: rgb(202, 22, 94);
+	font-family: 'Futura-PT', sans-serif;
+}
+
+span#justbold {
+	font-weight: 700;
+}
+
+p#modal-body {
+	text-align: left;
+}
+
+p#modal-body {
+	font-family: 'Futura-PT', sans-serif;
+	text-align: center;
+	font-size: 1.2rem;
+
+}
+
+p#modal-examples {
+	font-size: 1.2rem;
+}
+
+.not-word {
+	font-family: 'Merriweather', serif;
+	background-color: rgb(214, 214, 214);
+	color: #000;
+	letter-spacing: 2px;
+}
+
+.in-word {
+	font-family: 'Merriweather', serif;
+	letter-spacing: 2px;
+	background-color: rgb(255, 192, 203);
+}
+
+.in-place {
+	font-family: 'Merriweather', serif;
+	color: #000;
+	letter-spacing: 2px;
+	background-color: rgb(202, 22, 94);
+	color: #fafafa;
+}
+
 
 /* -------------------- Developer Page */
 .developer-container {
