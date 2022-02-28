@@ -108,7 +108,6 @@ const deleteTile = () => {
 
 // Add color to keyboard
 function colorKeyboard(guessedWord) {
-	console.log(guessedWord);
 	let wordArray = word.split("");
 	guessedWord.split("").forEach(addColor);
 	function addColor(item, index) {
@@ -128,7 +127,6 @@ function colorKeyboard(guessedWord) {
 		}
 	}
 }
-
 
 // 	A function to check if the user's guess is correct
 const checkTile = () => {
