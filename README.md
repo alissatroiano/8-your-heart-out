@@ -4,7 +4,7 @@ Smitten is an online game for Valentine's Day inspired by the famous "Wordle Gam
 
 The rules are simple: The player must guess the hidden word of 5 characters in 6 tries. First of all, type any love word on the first line and see if there's a match. You will get a match and the tile will turn red if the letter is guessed correctly and is in the right spot. If the letter is in the word, but in the wrong position, will become pink.  And the tile will become silver if the letter doesn't match the place and isn't in the word.
 
-![Screenshot 2022-02-27 153350](https://user-images.githubusercontent.com/95313496/155888973-51f761de-c3d8-45b2-90ad-8be4d5be0ee8.jpg)
+![Responsive View](wireframes/responsive.png)
 
 
 ## Table of Contents
@@ -13,14 +13,15 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
   - [Table of Contents](#table-of-contents)
   - [UX](#ux)
     - [Features](#features)
-    - [User Stories](#user-stories)
+    - [strategy-table](#strategy-table)
+    - [colour theary](#colour-theary)
     - [Wireframes](#wireframes)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Libraries and Programs Used](#libraries-and-programs-used)
+    - [Deployment](#deployment)
   - [CREDITS](#credits)
   - [ACKNOWLEDGEMENTS](#acknowledgements)
-  - [Deployment](#deployment)
 
 ## UX
 
