@@ -110,6 +110,9 @@ This project makes use of the following languages, frameworks, and libraries:
 
 - [jQuery](https://api.jquery.com/)
 
+- [Gitpod](https://www.gitpod.io/)
+
+- [Visual Studio Code](https://code.visualstudio.com/)
 ## Testing
 
 The following tests have been conducted by the [development team](https://github.com/alissatroiano/8-your-heart-out). Each test described below was accompanied by the actions taken to ensure the tests passed.
@@ -217,6 +220,8 @@ The live link to our deployed project can be found here: [Smitten](https://aliss
 - [GitHub Pages](https://pages.github.com/) was used to deploy the project.
 
 - [Git](https://git-scm.com/doc) - was used for version control
+
+- The template for the 404 Error page was copied from [Colorlib](https://colorlib.com/wp/free-404-error-page-templates/).
 
 ## ACKNOWLEDGEMENTS
 
