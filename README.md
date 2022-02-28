@@ -57,7 +57,7 @@ Developers: The page that shows the developers of the game and their contact inf
 - At the bottom of each card are links presented to both Github and Linkedin for easy connection. 
 
 ### strategy-table 
-![strategy-table.png](wireframes/strategy-table.png)
+![tradeoff.png](wireframes/tradeoff.png)
 
 ### colour theary 
 The classic colors related to love and Valentine's Day are red and white. Red represents deep passion and respect for your loved ones, and invites us to action, motivates us, this color represents a perfect match for Valentine's Day. White stands for a new beginning. If you blend the two colors, you get the pink color that represents playfulness and that is the color of first love. And to represent detached and neutral emotions is gray.
