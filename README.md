@@ -1,6 +1,6 @@
 # Smitten
 
-[Smitten](https://alissatroiano.github.io/8-your-heart-out/index.html) is an online word game related to love and Valentine's Day. Smitten was inspired by the trending "Wordle Game". The game is built for anyone who likes word games, and want to test their knowledge in love.
+[Smitten](https://alissatroiano.github.io/8-your-heart-out/index.html) is an online word game related to love and Valentine's Day. Smitten was inspired by the famous game, [Wordle](https://www.nytimes.com/games/wordle/index.html). The game is built for anyone who likes word games, and want to test their knowledge in love.
 
 The rules are simple: The player must guess the hidden word of 5 characters in 6 tries. First of all, type any love word on the first line and see if there's a match. You will get a match and the tile will turn red if the letter is guessed correctly and is in the right spot. If the letter is in the word, but in the wrong position, will become pink.  And the tile will become silver if the letter doesn't match the place and isn't in the word.
 
@@ -16,9 +16,15 @@ The rules are simple: The player must guess the hidden word of 5 characters in 6
     - [colour theary](#colour-theary)
     - [Wireframes](#wireframes)
   - [Technologies Used](#technologies-used)
-    - [Tools](#tools)
-    - [Languages Used](#languages-used)
-    - [Libraries and Programs Used](#libraries-and-programs-used)
+  - [Testing](#testing)
+    - [Navigation:](#navigation)
+    - [Game Functionality Test 1: Handling Clicks:](#game-functionality-test-1-handling-clicks)
+    - [Game Functionality Test 2: Handling Clicks](#game-functionality-test-2-handling-clicks)
+    - [Game Functionality Test 3: Applying Styles To Pressed Keys](#game-functionality-test-3-applying-styles-to-pressed-keys)
+    - [Game Functionality Test 4: Applying Styles To Pressed Keys](#game-functionality-test-4-applying-styles-to-pressed-keys)
+    - [W3C Jigsaw CSS Test:](#w3c-jigsaw-css-test)
+    - [W3C HTML Test:](#w3c-html-test)
+    - [Google Lighthouse Test #1: Performance:](#google-lighthouse-test-1-performance)
   - [Deployment](#deployment)
   - [CREDITS](#credits)
   - [ACKNOWLEDGEMENTS](#acknowledgements)
@@ -74,35 +80,113 @@ All wireframes were created with Balsamiq wireframing software and can be viewed
 
 ## Technologies Used
 
-### Tools
-
-- [W3c Validator](https://validator.w3.org/)
-- [Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
-- [JSHint](https://jshint.com/)
-- [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=es)
-- [TinyPNG](https://tinypng.com/)
-- [Fontawsome](https://fontawesome.com/)
-- [Bootstrap](https://bootstrap-vue.org/)
-- [Google Fonts](https://fonts.google.com/)
-- [Coolors](https://coolors.co/)
-- [Toolness](https://toolness.github.io/accessible-color-matrix/)
-
-### Languages Used
+This project makes use of the following languages, frameworks, and libraries:
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+  
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-HTML was used for the website/app and allows the game to be viewed.
-CSS and bootsrap to style the html and javascript.
-Javascript was used to create the logic for the game.
+- [Git](https://git-scm.com/doc)
+  
+- [GitHub Pages](https://pages.github.com/)
 
-### Libraries and Programs Used
+- [Google Fonts](https://fonts.google.com/)
 
-- rapid api(<https://rapidapi.com/ajith/api/love-calculator/details>)
+- [Bootstrap 5](https://getbootstrap.com/docs/5.1/)
 
-rapid api was used for the logic for the game allow us to match the two peoples names.
+- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
+- [GitPod](https://gitpod.io/)
+
+- [Balsamiq](https://balsamiq.com/)
+
+- [W3C Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
+
+- [W3C HTML Validator](https://validator.w3.org/)
+
+- [JS Hint](https://jshint.com/)
+
+- [jQuery](https://api.jquery.com/)
+
+## Testing
+
+The following tests have been conducted by the [development team](https://github.com/alissatroiano/8-your-heart-out). Each test described below was accompanied by the actions taken to ensure the tests passed.
+
+### Navigation:
+  1. Visited the website's navigation bar.
+  2. Clicked each link.
+  3. Verified links bring users to the proper section.
+  4. Repeated steps 1-3 on mobile and tablet.
+
+### Game Functionality Test 1: Handling Clicks:
+   1. Visited the game page on desktop & mobile browsers.
+   2. Open the *JavaScript console* to review the word.
+   3. Click on each key on the keyboard to generate a letter.
+   4. Notice the data from the keys are not rendering in the game-container as expected.
+   5. Observe a "TypeError" message when clicking the keys.
+   6. Visit the `script.js` file to review the code.
+   7. Refactor the code.
+   8. Reload browser window and repeat steps 2-3.
+   9. Observe how the data (letters) from the keys are now rendering in the game container as expected.
+   10. Confirm keyboard button clicks are being handled correctly.
+   11. Mark test passed.
+### Game Functionality Test 2: Handling Clicks
+   1. Visited the game page on desktop & mobile browsers.
+   2. Click on each key on the keyboard to generate a letter.
+   3. Observe how the letter of the key clicked renders in the corresponding tile im the game container.
+   4. Confirm keyboard button clicks are being handled correctly.
+   5. Mark test passed.
+### Game Functionality Test 3: Applying Styles To Pressed Keys
+  1. Visited the game page in a browser.
+  2. Open the *JavaScript console* to review the word.
+  3. Add letters that are included in the word to the game container.
+  4. Press Enter.
+  5. Ensure that the letters are highlighted in light pink in both the game & keyboard container.
+  6. Add letters that are not included in the word to the game container.
+  7. Observe that these letters are highlighted in light grey in both the game & keyboard container.
+  8. Add letters that are included in the word (and in the correct spot) to the game container.
+  9. Observe that these letters are highlighted in bright pink in both the game & keyboard container.
+  10. Refactor and resolve bugs as needed.
+  11. Mark test passed
+### Game Functionality Test 4: Applying Styles To Pressed Keys
+  1. Visited the game page in a browser.
+  2. Add letters that may be included in the word to the game container.
+  3. Press Enter.
+  4. Observe highlighted keys in key and game container.
+  5. Add another word.
+  6. Press Enter.
+  7. Notice that previously styled keys in the keyboard are overwritten incorrectly.
+  8. Visit `script.js` to review the code.
+  9. Observe an extra `return` statement in the `colorKeyboard()` function on line `124`.
+  10. Delete the extra `return` statement.
+  11. Repeat steps 1-6.
+  12. Observer that the bug is resolved.
+  13. Mark test passed.
+### W3C Jigsaw CSS Test:
+  1. Visited [W3C HTML Validator](https://validator.w3.org/nu/#textarea).
+  2. Uploaded the entire stylesheet.
+  3. Made all changes.
+  4. Ran test again to verify all CSS passed.
+  5. Repeated steps 1-4 again after repairing styles.
+
+### W3C HTML Test:
+ 1. Visited [W3C HTML Validator](https://validator.w3.org/nu/#textarea).
+ 2. Pasted all contents of `index.html`.
+ 3. Made all corrections to repair errors.
+ 4. Ran test again to verify all HTML passed tests.
+ 5. Repeated steps 1-4 after each update.
+
+### Google Lighthouse Test #1: Performance:
+  1. Visited the game page in a browser.
+  2. Open the *JavaScript console* and visit Google Lighthouse tab.
+  3. Observe test results.
+  4. Notice the score for performance is lower than anticipated.
+  5. Visit images directory and compress files.
+  6. Submit changes and repeat steps 1-3.
+  7. Observe that the score is now much higher.
+  8. Mark test passed.
 ## Deployment
 
 **Continuous Deployment** practices via [GitHub Pages](https://pages.github.com/) has been implemented for this project.
@@ -122,7 +206,7 @@ The live link to our deployed project can be found here: [Smitten](https://aliss
 
 ## CREDITS
 
-- The JavaScript logic for the game was learned from [Ani Kubow's YouTube video](https://www.youtube.com/watch?v=mpby4HiElek) and altered for this project by the development team.
+- The **JavaScript logic** that makes Smitten work like a [Wordle](https://www.nytimes.com/games/wordle/index.html) game was learned from [Ani Kubow's YouTube video](https://www.youtube.com/watch?v=mpby4HiElek) and altered for this project by the development team.
 
 - The fonts in the site were copied from [Google Fonts](https://fonts.google.com/)
   
@@ -132,6 +216,10 @@ The live link to our deployed project can be found here: [Smitten](https://aliss
 
 - [GitHub Pages](https://pages.github.com/) was used to deploy the project.
 
+- [Git](https://git-scm.com/doc) - was used for version control
+
 ## ACKNOWLEDGEMENTS
 
 - This game was built for [Code Institute's February 2022 'Love is in the Air' Hackathon](https://hackathon.codeinstitute.net/hackathon/public/17/)
+
+- This game was inspired by the newly famous game, [Wordle](https://www.nytimes.com/games/wordle/index.html)
