@@ -134,7 +134,6 @@ const checkTile = () => {
 
 	// Breaks check before it processes as guess -- RE
 	if (guessRows[thisRow].join('').length != 5) {
-		console.log("row NOT full on enter click")
 		return
 	}
 
@@ -187,16 +186,6 @@ const displayMessage = (message) => {
 
 	messageText.appendChild(messageElement)
 }
-
-// // A function to add colors behind letters in the guessRows if the letters are in the words
-// function addColor() {
-// 	for (let i = 0; i < word.length; i++) {
-// 		const tile = document.querySelector('.tile-' + thisRow + '-' + i)
-// 		if (tile.textContent === word[i]) {
-// 			tile.style.backgroundColor = '#00ff00'
-// 		}
-// 	}
-// }
 
 // A function to add colors behind letters in the guessRows if the letters are in the words
 const addColor = () => {
