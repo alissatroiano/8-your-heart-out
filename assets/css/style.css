@@ -8,6 +8,13 @@
 	--silver-pink: rgb(190, 163, 167);
 }
 
+::selection {
+	background-color: rgb(255, 192, 203);
+}
+
+::-moz-selection {
+	background-color: rgb(255, 192, 203);
+}
 
 /* -------------------- General */
 * {
@@ -42,7 +49,7 @@ body {
 .container-fluid {
 	padding: 0 1em;
 	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	max-width: 100vw;
 	line-height: 3.2em;
 }
@@ -51,6 +58,15 @@ body {
 	max-width: 100vw;
 }
 
+.diff-letter {
+	border: 2px solid var(--intense-red);
+	border-radius: 5px;
+	background-color: var(--intense-red);
+	color: var(--light-bc);
+	padding: 0 .2em;
+	margin-right: 3px;
+	font-size: 3.5rem;
+}
 
 #diff-letter {
 	border: 2px solid var(--intense-red);
@@ -179,6 +195,7 @@ body {
 	background-color: var(--dark);
 	color: var(--light-bc);
 	text-align: center;
+	padding-top: 5px;
 }
 
 /* -------------------- Game / Index */
@@ -223,7 +240,6 @@ body {
 }
 
 .mn-container {
-	padding-top: 2em;
 	width: 550px;
 	max-width: 80%;
 	position: relative;
@@ -290,7 +306,7 @@ body {
 }
 
 .key-container button {
-	width: 43px;
+	min-width: 43px;
 	height: 58px;
 	border-radius: 4px;
 	border: none;
@@ -300,9 +316,13 @@ body {
 	margin: 4px;
 }
 
-.key-container button:nth-child(21),
+.key-container button:nth-child(11) {
+	margin-left: 30px;
+}
+
+.key-container button:nth-child(20),
 .key-container button:nth-child(28) {
-	width: 80px;
+	width: 68px;
 	height: 58px;
 	border-radius: 10%;
 }
@@ -348,6 +368,65 @@ body {
 
 .silver-overlay {
 	background-color: rgb(190, 163, 167);
+}
+
+/* -------------------- How To Play Modal */
+
+.modal-header {
+	justify-content: center;
+}
+
+.modal-body {
+	font-size: 1.1rem;
+}
+
+h5#staticBackdropLabel {
+	font-family: 'Merriweather', serif;
+	font-weight: 900;
+	font-size: 3rem;
+	margin-bottom: 0!important;	
+}
+
+span.bold {
+	font-weight: 700;
+	color: rgb(202, 22, 94);
+	font-family: 'Futura-PT', sans-serif;
+}
+
+span.justbold {
+	font-weight: 700;
+}
+
+p.modal-text {
+	font-family: 'Futura-PT', sans-serif;
+	text-align: center;
+	font-size: 1.2rem;
+
+}
+
+p.modal-examples {
+	font-size: 1.2rem;
+}
+
+.not-word {
+	font-family: 'Merriweather', serif;
+	background-color: rgb(214, 214, 214);
+	color: #000;
+	letter-spacing: 2px;
+}
+
+.in-word {
+	font-family: 'Merriweather', serif;
+	letter-spacing: 2px;
+	background-color: rgb(255, 192, 203);
+}
+
+.in-place {
+	font-family: 'Merriweather', serif;
+	color: #000;
+	letter-spacing: 2px;
+	background-color: rgb(202, 22, 94);
+	color: #fafafa;
 }
 
 /* -------------------- Developer Page */
@@ -449,6 +528,10 @@ strong {
 }
 /*For mobile screens*/
 @media (max-width: 991px) {
+
+	.container-fluid {
+		margin-bottom: 0.8em;
+	}
 	.tile-container {
 		transform: scale(.9);
 		margin-bottom: 1px;
@@ -486,6 +569,9 @@ strong {
 		margin-bottom: 0;
 	}
 
+	.text-center > h1 {
+		font-size: 1.65rem;
+	}
 	.text-end,
 	.question {
 		transform: scale(.7);

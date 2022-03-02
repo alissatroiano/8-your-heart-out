@@ -18,13 +18,12 @@ body {
 }
 
 ::selection {
-	background-color: rgb(202, 22, 94);
+	background-color: rgb(255, 192, 203);
 }
 
 ::-moz-selection {
-	background-color: rgb(202, 22, 94);
+	background-color: rgb(255, 192, 203);
 }
-	
 
 a {
 	color: rgb(35, 0, 5);
@@ -174,7 +173,7 @@ a:hover {
 	width: 88%;
 	height: 41px;
 	padding-left: 15px;
-	padding-rigt: 15px;
+	padding-right: 15px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	background-color: rgba(0,0,0,0.2);
