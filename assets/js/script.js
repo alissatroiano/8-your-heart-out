@@ -134,11 +134,7 @@ const checkTile = () => {
 
 	// Breaks check before it processes as guess -- RE
 	if (guessRows[thisRow].join('').length != 5) {
-<<<<<<< HEAD
-		return
-=======
 		return;
->>>>>>> d43cd4fb59ead8000adc0b41dc6c879d09f0d949
 	}
 
 	if (thisTile === 5) {
@@ -175,13 +171,8 @@ const displayMessage = (message) => {
 		messageText.children[0].remove();
 	}
 
-<<<<<<< HEAD
-	messageText.appendChild(messageElement)
-}
-=======
 	messageText.appendChild(messageElement);
 };
->>>>>>> d43cd4fb59ead8000adc0b41dc6c879d09f0d949
 
 // A function to add colors behind letters in the guessRows if the letters are in the words
 const addColor = () => {
