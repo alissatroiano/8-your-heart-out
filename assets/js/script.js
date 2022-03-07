@@ -66,6 +66,8 @@ keys.forEach(key => {
 	buttonElement.setAttribute('id', key);
 	buttonElement.addEventListener('click', () => handleClick(key));
 	keyboard.append(buttonElement);
+	buttonElement.addEventListener('keydown', () => handleKeyPress(key));
+
 });
 
 // Clicks that handle special keys, enter and backspace
@@ -81,6 +83,7 @@ const handleClick = (letter) => {
 	guessLetter(letter);
 };
 
+
 // A function to display letter in tile when user clicks on it
 const guessLetter = (letter) => {
 	if (thisTile < 5 && thisRow < 6) {
@@ -89,6 +92,20 @@ const guessLetter = (letter) => {
 		guessRows[thisRow][thisTile] = letter; // This line had a 0 instead of 'thisRow' -- RE
 		tile.setAttribute('data', letter);
 		thisTile++;
+	}
+};
+
+// A function to handle keypress 
+const handleKeyPress = () => {
+	const event = window.event;
+	if (event.keyCode === 13) {
+		checkTile();
+	}
+	if (event.keyCode === 8) {
+		deleteTile();
+	}
+	if (event.keyCode === thisTile) {
+		guessLetter();
 	}
 };
 
